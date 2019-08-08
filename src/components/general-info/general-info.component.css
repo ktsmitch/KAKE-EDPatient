@@ -1,0 +1,37 @@
+h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Orienta', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 auto;
+    }
+
+button{
+    width: 300px;
+    height: 200px;
+    border: thick;
+    border-radius: 3px;
+    border-color: black;
+    
+}
+
+.but {
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:none;
+    border: none;
+    outline: none;
+}
+
+.container{
+    margin-top: 50px; 
+    text-align: center; 
+
+}

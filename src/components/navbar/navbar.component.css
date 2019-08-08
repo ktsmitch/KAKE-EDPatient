@@ -1,0 +1,16 @@
+h1{ 
+    font-weight: bold;
+    size: 30px;
+    margin: 0 auto;
+}
+
+mat-toolbar-row {
+    justify-content: space-between;
+  }
+
+
+  span {
+      text-align: center;
+      margin: 0 auto;
+  }
+

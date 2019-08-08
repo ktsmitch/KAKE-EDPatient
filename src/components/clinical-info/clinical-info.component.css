@@ -1,0 +1,101 @@
+h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Orienta', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 auto;
+    }
+
+h2 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Orienta', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+input {
+    width: 80%;
+}
+
+
+.container {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+.form-control{
+    margin: 0 auto;
+    width: 50%;
+    height: 40px;
+}
+
+label{
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+h3 {
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+
+  .alphabet {
+    margin: 0 auto; 
+    list-style-type: none;
+    padding: 10px;
+    width: 15em;
+    text-align: left;
+  }
+  .alphabet li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .alphabet li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .alphabet li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .alphabet .text {
+    position: relative;
+    top: -3px;
+    text-align: left;
+  }
+  .alphabet .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    text-align: left;
+  }
+  

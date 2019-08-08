@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<app-navbar></app-navbar>
+<h1>Feedback</h1>
+
+<div class="form-group">
+<form>
+    <p>
+    <label for="q1">Describe your experience:</label><br>
+    <textarea rows="5" class="form-control" id="search"></textarea>
+    </p>
+
+    <p>
+    <label for="q2">What could we improve? </label><br>
+    <textarea rows="5" class="form-control" id="search"> </textarea>
+    </p>
+
+    <p>
+    <label for="q3">How was the staff?</label><br>
+    <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="bad">Bad</mat-radio-button>
+            <mat-radio-button value="avg">Average</mat-radio-button>
+            <mat-radio-button value="great">Great</mat-radio-button>
+    </mat-radio-group>
+    </p>
+    <p>
+    <label for="q4">How was the facilities?</label><br>
+    <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="bad">Bad</mat-radio-button>
+            <mat-radio-button value="avg">Average</mat-radio-button>
+            <mat-radio-button value="great">Great</mat-radio-button>
+    </mat-radio-group>
+    </p>
+
+    <p>
+    <label for="q5">Overall experience at RBWH Emergency Deparment?</label><br>
+    <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="sad"><mat-icon>mood_bad</mat-icon> </mat-radio-button>
+            <mat-radio-button value="happy"><mat-icon>mood</mat-icon> </mat-radio-button>
+    </mat-radio-group>
+    </p>
+    
+<button type="submit" class="btn btn-default">Submit</button>
+</form> 
+</div>
