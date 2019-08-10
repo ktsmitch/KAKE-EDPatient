@@ -73,6 +73,11 @@ h3 {
     background-color: #BBD8DC !important;
     color: white;
   }
+
+  .alphabet li.selected {
+    background-color: #CFD8DC;
+    color: white;
+  }
   .alphabet li:hover {
     color: #607D8B;
     background-color: #DDD;

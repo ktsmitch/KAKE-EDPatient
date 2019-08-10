@@ -17,12 +17,13 @@
 <h3> or </h3>
 
 <h3>Look up alphabetically.... </h3>
-
-<ul class="alphabet">
-    <li *ngFor="let alpha of alphabet"
-      (click)="onSelect(alpha)">
-      <span class="badge">{{alpha}}</span> 
-    </li>
-  </ul>
   
+<ul class="alphabet">
+  <li *ngFor="let clinic of clinicinfo">
+    <a routerLink="/detail/{{clinic.id}}">
+    <span class="badge">{{clinic.id}}</span> {{clinic.name}}
+    </a>  
+  </li>
+</ul>
+
 </div>

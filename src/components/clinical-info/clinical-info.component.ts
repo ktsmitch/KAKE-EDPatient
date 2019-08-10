@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CLINICNFO} from '../app/mock-info';
+import {Clinical} from '../app/clinical';
 
 @Component({
   selector: 'app-clinical-info',
@@ -7,20 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClinicalInfoComponent implements OnInit {
   
-  alphabet: string [] = [
-    'A','B','C','D','E', 'F', 'G'
-, 'H', 'I', 'J', 'K'
-  ];
+  clinicinfo = CLINICNFO;
 
-  selectedCondition: string; 
+  selectedCondition: Clinical; 
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onSelect(alpha: string): void {
+  onSelect(condition: Clinical): void {
     let me = this;
-    me.selectedCondition = alpha; 
+    me.selectedCondition = condition; 
   }
+
+  
 }

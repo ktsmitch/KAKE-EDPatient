@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from '../contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
+import { IndividualClinicalComponent } from '../individual-clinical/individual-clinical.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule }   from '@angular/forms';
     GeneralInfoComponent,
     FeedbackComponent,
     ContactComponent,
+    IndividualClinicalComponent,
     
   ],
   imports: [
