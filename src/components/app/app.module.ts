@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from './material.module';
-
+import { HttpClientModule }    from '@angular/common/http';
+import { InMemoryDataService } from '../in-memory-data.service';
+import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from '../navbar/navbar.component';
@@ -14,6 +16,7 @@ import { ContactComponent } from '../contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
 import { IndividualClinicalComponent } from '../individual-clinical/individual-clinical.component';
+import { SearchClinicalComponent } from '../search-clinical/search-clinical.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,7 @@ import { IndividualClinicalComponent } from '../individual-clinical/individual-c
     FeedbackComponent,
     ContactComponent,
     IndividualClinicalComponent,
+    SearchClinicalComponent,
     
   ],
   imports: [
@@ -33,7 +37,12 @@ import { IndividualClinicalComponent } from '../individual-clinical/individual-c
     MaterialModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, {dataEncapsulation: false}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

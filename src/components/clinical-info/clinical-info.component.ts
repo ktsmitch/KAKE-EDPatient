@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {CLINICNFO} from '../app/mock-info';
 import {Clinical} from '../app/clinical';
+import {ClinicService} from '../clinic.service'; 
 
 @Component({
   selector: 'app-clinical-info',
@@ -9,13 +9,18 @@ import {Clinical} from '../app/clinical';
 })
 export class ClinicalInfoComponent implements OnInit {
   
-  clinicinfo = CLINICNFO;
+  clinicalInfo: Clinical[];
 
   selectedCondition: Clinical; 
 
-  constructor() { }
+  constructor(private clinicService: ClinicService ) { }
 
   ngOnInit() {
+    this.getAllClinics(); 
+  }
+
+  getAllClinics(): void {
+    this.clinicService.getAllClinic().subscribe(res => this.clinicalInfo = res);
   }
 
   onSelect(condition: Clinical): void {
