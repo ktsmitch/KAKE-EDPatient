@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<app-navbar></app-navbar>
+<div class="container">
+<h1>Clinical Information </h1>
+<div *ngIf="clinical">
+    <h2>{{clinical.name | uppercase}} Emergency Department factsheets</h2>
+    <div>
+      <h3>What Causes: </h3> {{clinical.whatCauses}} <br>
+      <h3>Symtpons: </h3>{{clinical.symptons}} <br> 
+      <h3>Treatment:</h3> {{clinical.treatment}}  
+    </div>
+    <button (click)="goBack()">Back</button>
+   </div>
+  </div>

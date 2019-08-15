@@ -65,12 +65,17 @@ h3 {
     left: 0;
     background-color: #EEE;
     margin: .5em;
-    padding: .3em 0;
+    padding: .3em;
     height: 1.6em;
     border-radius: 4px;
   }
   .alphabet li.selected:hover {
     background-color: #BBD8DC !important;
+    color: white;
+  }
+
+  .alphabet li.selected {
+    background-color: #CFD8DC;
     color: white;
   }
   .alphabet li:hover {
