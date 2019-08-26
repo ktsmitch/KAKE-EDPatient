@@ -4,11 +4,27 @@
 <h1>Clinical Information </h1>
 <div *ngIf="clinical">
     <h2>{{clinical.name | uppercase}} Emergency Department factsheets</h2>
-    <div>
-      <h3>What Causes: </h3> {{clinical.whatCauses}} <br>
-      <h3>Symtpons: </h3>{{clinical.symptons}} <br> 
-      <h3>Treatment:</h3> {{clinical.treatment}}  
+    <div class="info">
+     <div *ngIf="clinical.whatCauses!=null"> <h3>What Causes: </h3> {{clinical.whatCauses}} <br></div>
+     <div *ngIf="clinical.symptons!=null">  <h3>Symptons: </h3>{{clinical.symptons}} <br> </div>
+     <div *ngIf="clinical.treatment!=null"> <h3>Treatment:</h3> {{clinical.treatment}} <br></div>
+     <div *ngIf="clinical.whatIs!=null"> <h3>What is {{clinical.Name}}: </h3> {{clinical.whatIs}} <br></div>
+     <div *ngIf="clinical.homeCare!=null"> <h3>Home care: </h3>{{clinical.homeCare}} <br> </div>
+     <div *ngIf="clinical.whatToExpect!=null"> <h3>What to expect:</h3> {{clinical.whatToExpect}} <br></div>
+     <div *ngIf="clinical.seekingHelp!=null">  <h3>Seeking help: </h3> {{clinical.seekingHelp}} <br></div>
+     <div *ngIf="clinical.wantToKnowMore!=null"> <h3>Want to know more:</h3>{{clinical.wantToKnowMore}} <br></div> 
+     <div *ngIf="clinical.waysToReduce!=null"> <h3>Ways to reduce:</h3> {{clinical.waysToReduce}} <br></div>
+     <div *ngIf="clinical.followUp!=null"> <h3>Follow up:</h3> {{clinical.followUp}} <br></div>
+     <div *ngIf="clinical.prevention!=null"> <h3>Prevention: </h3>{{clinical.prevention}} <br> </div>
+     <div *ngIf="clinical.whyDoesThisHappen!=null"> <h3>Why does this happen:</h3> {{clinical.whyDoesThisHappen}} <br></div>
+     <div *ngIf="clinical.returnImmedIf!=null"> <h3>Return immediately  if: </h3> {{clinical.returnImmedIf}} <br></div>
+     <div *ngIf="clinical.instruct!=null"> <h3>Instructions: </h3>{{clinical.instruct}} <br> </div>
+     <div *ngIf="clinical.whyIsItProb!=null"> <h3>Why is it a problem:</h3> {{clinical.whyIsItProb}} <br></div>
+     <div *ngIf="clinical.whatShouldDo!=null"> <h3>What should I do: </h3> {{clinical.whatShouldDo}} <br></div>
+     <div *ngIf="clinical.howSpreads!=null"> <h3>How is it spread: </h3>{{clinical.howSpreads}} <br> </div>
+     <div *ngIf="clinical.stoppingSpread!=null">  <h3>Stopping the spread:</h3> {{clinical.stoppingSpread}} <br></div>
+     <div *ngIf="clinical.probNextFewDays!=null"> <h3>Problems to watch out for in the next few days to week:</h3> {{clinical.probNextFewDays}} <br></div>
     </div>
-    <button (click)="goBack()">Back</button>
+    <button (click)="goBack()"><mat-icon>keyboard_arrow_left</mat-icon></button>
    </div>
   </div>

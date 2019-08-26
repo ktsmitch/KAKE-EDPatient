@@ -1,13 +1,14 @@
 export class Clinical {
     id: number;
     name: string;
-    whatI?: string;
-    whatCauses: string;
-    symptons: string;
-    treatment: string;
+    whatIs?: string;
+    whatCauses?: string;
+    symptons?: string;
+    treatment?: string;
+    homeCare?: string;
     whatToExpect?: string;
     seekingHelp?: string; // same for all
-    wantToKnowMore?: StoreExceptionsInformation;
+    wantToKnowMore?: string;
     waysToReduce?: string;
     followUp?: string;
     prevention?: string;
