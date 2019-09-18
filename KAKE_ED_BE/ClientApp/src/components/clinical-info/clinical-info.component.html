@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<app-navbar></app-navbar>
+
+<h1>Clinical Information</h1>
+
+<div class="container">
+
+<app-search-clinical></app-search-clinical>
+
+<h3> or </h3>
+
+<h3>Look up alphabetically.... </h3>
+
+<ul class="alphabet">
+  <li *ngFor="let clinic of clinicalInfo">
+    <a routerLink="/detail/{{clinic.id}}">
+    <span class="badge">{{clinic.id}}</span> {{clinic.name}}
+    </a>  
+  </li>
+</ul>
+
+<app-footer></app-footer>
+</div>

@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<app-navbar></app-navbar>
+<div class="container">
+<h1>Clinical Information </h1>
+<div *ngIf="clinical">
+    <h2>{{clinical.name | uppercase}} Emergency Department factsheets</h2>
+    <div class="info">
+     <div *ngIf="clinical.whatCauses!= ''"> <h3>What Causes: </h3>
+        <ul>
+          <li *ngFor="let what of whatCauses">{{what}}</li>
+       </ul>
+        <br></div>
+     <div *ngIf="clinical.symptons!= ''">  <h3>Symptons: </h3>
+        <ul>
+            <li *ngFor="let symp of symptons">{{symp}}</li>
+     </ul>
+      <br></div>
+     <div *ngIf="clinical.whatIs!= ''"> <h3>What is {{clinical.name}}: </h3> 
+        <ul>
+       <li *ngFor="let what of whatIs">{{what}}</li>    
+       </ul>
+        <br></div>
+     <div *ngIf="clinical.treatment!= ''"> <h3>Treatment:</h3> 
+        <ul>
+         <li *ngFor="let treat of treatment">{{treat}}</li>
+        </ul>
+     <br></div>
+     <div *ngIf="clinical.whatToExpect!= ''"> <h3>What to expect:</h3> 
+        <ul>
+            <li *ngFor="let what of whatToExpect">{{what}}</li>
+             </ul>
+             <br></div>
+     <div *ngIf="clinical.waysToReduce!= ''"> <h3>Ways to reduce:</h3> {{clinical.waysToReduce}} <br></div>
+     <div *ngIf="clinical.prevention!= ''"> <h3>Prevention: </h3>
+        <ul>
+             <li *ngFor="let prev of prevention">{{prev}}</li>
+             </ul>
+              <br> </div>
+     <div *ngIf="clinical.whyDoesThisHappen != ''"> <h3>Why does this happen:</h3> {{clinical.whyDoesThisHappen}} <br></div>
+     <div *ngIf="clinical.homeCare != ''"> <h3>Home care: </h3>
+        <ul>
+         <li *ngFor="let home of homeCare">{{home}}</li>
+        </ul>
+        <br> </div>
+     <div *ngIf="clinical.returnImmedIf!= ''"> <h3>Return immediately  if: </h3> 
+        <ul>
+       <li *ngFor="let return of returnImmed">{{return}}</li>
+        </ul>
+        <br></div>
+     <div *ngIf="clinical.instructions!= ''"> <h3>Instructions: </h3>{{clinical.instructions}} <br> </div>
+     <div *ngIf="clinical.whyIsItAProb!= ''"> <h3>Why is it a problem:</h3> {{clinical.whyIsItAProb}} <br></div>
+     <div *ngIf="clinical.whatShouldIDo!= ''"> <h3>What should I do: </h3> {{clinical.whatShouldIDo}} <br></div>
+     <div *ngIf="clinical.howIsItSpread!= ''"> <h3>How is it spread: </h3>{{clinical.howIsItSpread}} <br> </div>
+     <div *ngIf="clinical.stoppingSpread!= ''">  <h3>Stopping the spread:</h3> {{clinical.stoppingSpread}} <br></div>
+    <div *ngIf="clinical.probsToWatchFor!= ''"> <h3>Problems to watch out for in the next few days to week:</h3> {{clinical.probsToWatchFor}} <br></div>
+        </div>
+        <div *ngIf="clinical.followUp!= ''"> <h3>Follow up:</h3> 
+            <ul>
+            <li *ngFor="let follow of followUp">{{follow}}</li>
+            </ul>
+            <br></div>
+        <div *ngIf="clinical.seekingHelp!= ''">  <h3>Seeking help: </h3> 
+            <ul>
+          <li *ngFor="let seek of seekingHelp">{{seek}}</li>
+            </ul>
+            <br></div>
+         <div *ngIf="clinical.wantToKnowMore!= ''"> <h3>Want to know more:</h3>
+            <ul>
+            <li *ngFor="let want of wantToKnowMore">{{want}}</li>
+            </ul>
+            <br></div> 
+
+
+        <button (click)="goBack()"><mat-icon>keyboard_arrow_left</mat-icon>Back to Search</button>
+   </div>
+
+   <app-footer></app-footer>
+  </div>

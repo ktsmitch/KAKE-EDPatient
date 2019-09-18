@@ -1,0 +1,14 @@
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\bin\Debug\netcoreapp2.1\KAKE_ED_BE.deps.json
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\bin\Debug\netcoreapp2.1\KAKE_ED_BE.runtimeconfig.json
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\bin\Debug\netcoreapp2.1\KAKE_ED_BE.runtimeconfig.dev.json
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\bin\Debug\netcoreapp2.1\KAKE_ED_BE.dll
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.csprojAssemblyReference.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.csproj.CoreCompileInputs.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.RazorAssemblyInfo.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.RazorAssemblyInfo.cs
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.AssemblyInfoInputs.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.AssemblyInfo.cs
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.RazorTargetAssemblyInfo.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\bin\Debug\netcoreapp2.1\KAKE_ED_BE.pdb
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.dll
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKE_ED_BE\obj\Debug\netcoreapp2.1\KAKE_ED_BE.pdb

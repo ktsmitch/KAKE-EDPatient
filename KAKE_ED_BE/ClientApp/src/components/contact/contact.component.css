@@ -1,0 +1,31 @@
+h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Signika', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Signika', sans-serif;
+}
+
+span {
+    font-weight: bold;
+}
+
+td {
+    text-align: center; 
+    font-family: 'Catamaran', sans-serif;
+}
+
+img {
+    width: 80%;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center; 
+}

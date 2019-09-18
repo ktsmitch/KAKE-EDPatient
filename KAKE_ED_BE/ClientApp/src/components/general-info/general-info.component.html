@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<app-navbar></app-navbar>
+<h1>General Information</h1>
+
+
+ <div class="container" fxLayout="row" fxLayout.xxs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="40%">
+        <a [routerLink]="['/general/']" fragment="arrival" ><h3><mat-icon>filter_1</mat-icon>Arrival</h3></a>
+    <img mat-card-image class="img" src="https://www.wslhd.health.nsw.gov.au/Images/UserUploadedImages/1056/Westmead-Hospital-ED-entrance-300x200.jpg"/>
+  </div>
+  <div fxFlex="40%">
+        <a [routerLink]="['/general/']" fragment="treatment" > <h3><mat-icon>filter_2</mat-icon>Treatment</h3></a>
+    <img mat-card-image class="img" src="https://www.news-medical.net/image.axd?picture=2018%2F2%2Ffemale_doc_2.jpg">
+  </div>
+  <div fxFlex="40%">
+        <a [routerLink]="['/general/']" fragment="outcome" ><h3><mat-icon>filter_3</mat-icon>Outcome</h3></a>
+    <img mat-card-image class="img" src="https://www.seekpng.com/png/detail/84-849266_newsletter-subscribe-icon-png-outcome-icon-png.png">
+  </div>
+</div>
+
+
+ <mat-toolbar id="arrival">
+    <mat-toolbar-row>
+      <h2 id="toolbarArrival"><mat-icon>filter_1</mat-icon> ARRIVAL</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+    <table>
+        <tr>
+        <td>
+        <br>On arrival to the Emergency & Trauma Centre you will be seen by the Triage Nurse to assess 
+        your condition so we can send you to the right area to be treated in the department. More serious
+        cases will be given priority.
+        <br>
+        <br>Once seen by the Triage Nurse you will be seen by a member of your Administration team to ensure 
+        we have your contact details such as Medicare and private health status, your local doctor and 
+        next of kin. 
+        <br>
+        <br>Our Administration Officer can also help with issues relating to charges that will be incurred by
+        non-Medicare card holders. 
+        <td>
+        </td>
+        </tr>
+    </table>
+  </div>
+
+  <mat-toolbar id="treatment">
+    <mat-toolbar-row>
+      <h2 id="toolbarTreatment"><mat-icon>filter_2</mat-icon>TREATMENT</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+      <table>
+          <tr>
+          <td>
+             <br>Once you have seen the Triage Nurse and Administration Officer you will be sent to your 
+             Resuscitation Area, Acute Area or Fast Track Area.
+             <br> Investigations and treatments will determine if you need to be admitted or can go home.
+             <br>These can take some time. Please ask if you are unsure what is happening or your condition
+             gets worse whilst waiting.
+             <br>
+             <br><span><h2>Please tell the Emergency & Trauma Centre Staff about:</h2></span><br>
+             <ul> 
+             <li> Any health problems you have </li>
+            <li>  Medications and treatments you take  </li>
+            <li> If you are pregnant or breastfeeding </li>
+            <li>  Allergies </li>
+            <li>  If you may be infectious to others or have been exposed to someone with an infectious illness </li>
+            <li>  If you have recently travelled overseas </li>
+            </ul>
+          <td>
+          </td>
+          </tr>
+      </table>
+  </div>
+  
+
+  <mat-toolbar id="outcome">
+    <mat-toolbar-row>
+      <h2 id="toolbarOutcome"><mat-icon>filter_3</mat-icon> OUTCOME</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+    <table>
+        <tr>
+        <td>
+      Most of our patients will get to go home. If you do have to be admitted it can take some
+      time for a hospital bed to be ready. Until then you will be cared for by Emergency & Trauma Centre 
+      staff. 
+        </td>
+        <td>
+        </td>
+        </tr>
+    </table>    
+    <app-footer></app-footer>
+  </div>
+
+
