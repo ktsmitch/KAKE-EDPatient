@@ -18,6 +18,10 @@ import { SearchClinicalComponent } from '../search-clinical/search-clinical.comp
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from '../footer/footer.component';
 import { SurveyComponent } from '../survey/survey.component';
+import { SearchWebsiteComponent } from '../search-website/search-website.component';
+import { AdminDashboardComponent } from '../admin-dashboard/admin-dashboard.component';
+import { CreateClinicalComponent } from '../create-clinical/create-clinical.component';
+import { LoginAdminComponent } from '../login-admin/login-admin.component';
 
 
 @NgModule({
@@ -33,6 +37,10 @@ import { SurveyComponent } from '../survey/survey.component';
     SearchClinicalComponent,
     FooterComponent,
     SurveyComponent,
+    SearchWebsiteComponent,
+    AdminDashboardComponent,
+    CreateClinicalComponent,
+    LoginAdminComponent,
 
     
   ],

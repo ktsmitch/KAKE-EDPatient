@@ -38,5 +38,28 @@ namespace KAKE_ED_BE.Controllers
         {
             return objclinical.SearchClinicalData(name);
         }
+
+        [HttpPost]
+        [Route("api/clinical/create")]
+        public int Create([FromBody]Clinical clinical)
+        {
+            return objclinical.AddClinical(clinical);
+        }
+
+        [HttpDelete]
+        [Route("api/clinical/delete/{id}")]
+        public int Delete(int id)
+        {
+            return objclinical.DeleteClinical(id);
+        }
+
+        [HttpPut]
+        [Route("api/clinical/edit")]
+        public int Edit([FromBody]Clinical clinical)
+        {
+            return objclinical.UpdateClinical(clinical);
+        }
+
     }
+
 }

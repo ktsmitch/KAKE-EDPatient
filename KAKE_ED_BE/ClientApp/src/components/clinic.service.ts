@@ -12,7 +12,7 @@ import { Clinical } from './app/clinical';
 })
 export class ClinicService {
   private clinicUrl = 'http://localhost:5000/api/clinical';  // URL to web api
- 
+
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
@@ -48,31 +48,27 @@ searchClinical(term: string): Observable<Clinical[]> {
   );
 }
 
-//   getClinic(id: number): Observable<Clinical> {
-//     const url = `${this.clinicUrl}/${id}`;
-//     return this.http.get<Clinical>(url).pipe(
-//      catchError(this.handleError<Clinical>('getClinical id=${id}'))
-//     );
-    
-//   }
+saveClinical(clinical: Clinical): Observable<Clinical>{
+  return this.http.post<Clinical>('http://localhost:5000/api/clinical/create', clinical, this.httpOptions)
+  .pipe(
+  catchError(this.handleError<Clinical>('saveClinical'))
+  );
+}
 
-//   getAllClinic(): Observable<Clinical[]> {
-//     return this.http.get<Clinical[]>(this.clinicUrl)
-//      .pipe(
-//       catchError(this.handleError<Clinical[]>('getAllClinical', []))
-//     );
-//   }
+deleteClinical(id: number): Observable<Clinical> {
+  return this.http.delete<Clinical>(`${this.clinicUrl}/delete/${id}`)
+  .pipe(
+  catchError(this.handleError<Clinical>('deleteClinical id=${id}'))
+  );
+}
 
-//   /* GET heroes whose name contains search term */
-// searchClinical(term: string): Observable<Clinical[]> {
-//   if (!term.trim()) {
-//     // if not search term, return empty hero array.
-//     return of([]);
-//   }
-//   return this.http.get<Clinical[]>(`${this.clinicUrl}/?name=${term}`).pipe(
-//    catchError(this.handleError<Clinical[]>('searchClinical', []))
-//   );
-// }
+updateClinic(clinical: Clinical): Observable<Clinical> {
+  return this.http.put<Clinical>('http://localhost:5000/api/clinical/edit/', clinical, this.httpOptions)
+  .pipe(
+  catchError(this.handleError<Clinical>('editClinical'))
+  );
+}
+
 
   /**
  * Handle Http operation that failed.

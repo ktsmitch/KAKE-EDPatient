@@ -5,9 +5,10 @@
       <mat-icon>more_vert</mat-icon>
     </button>
  <h1> MY ED </h1>
- <button mat-icon-button [mat-menu-trigger-for]="search">
-    <mat-icon>search</mat-icon>
-  </button>
+
+ <input matInput  #webSearch  (keyup.enter)="search(webSearch.value)" placeholder="Search..." autocomplete="off" />
+
+
   </mat-toolbar>
   <mat-menu x-position="before" #menu="matMenu">
     <button mat-menu-item  routerLink="/home"> <mat-icon>home</mat-icon> Home</button>
@@ -17,9 +18,7 @@
     <button mat-menu-item  routerLink="/contact"> <mat-icon>call</mat-icon>Contact</button>
   </mat-menu>
 
-  <mat-menu x-position="before" #search="matMenu">
-          <input  mat-menu-item matInput placeholder="Search...">
-    </mat-menu>
+
   
 </div>
   

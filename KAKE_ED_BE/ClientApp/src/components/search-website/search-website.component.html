@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<link rel="https://surveyjs.azureedge.net/1.1.10/survey.jquery.min.js" type="text/css" rel="stylesheet">
+<app-navbar></app-navbar>
+
+<h1>Search Results</h1>
+
+<h2>Search results for "{{searchTerm}}"</h2>
+<table  *ngIf="data">
+            <tr *ngFor="let dat of data">
+                <td class="name">{{ dat.page }}</td>
+                <td> 
+                    <button (click)="search(dat)"> Go To Page </button>
+                </td>
+            </tr>
+    </table>
+  <div class ="noData" *ngIf="data == ''">
+ <h3>No Results!</h3> 
+</div>  
+<app-footer></app-footer>

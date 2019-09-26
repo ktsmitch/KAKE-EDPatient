@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<app-navbar></app-navbar>
+
+<h1>Admin Dashboard</h1>
+
+<div class="container">
+
+<h3>Clinical Data</h3>
+
+<p *ngIf="!clinicalInfo"><em>Loading...</em></p>
+
+<p>
+    <a [routerLink]="['/admin/create']">Create New</a>
+</p>
+
+<table class='table' *ngIf="clinicalInfo">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let clinc of clinicalInfo">
+            <td>{{ clinc.id }}</td>
+            <td>{{ clinc.name }}</td>
+            <td> <a [routerLink]="['/admin/edit/', clinc.id]">Edit</a> |
+                <a [routerLink]="" (click)="delete(clinc.name, clinc.id)">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<app-footer></app-footer>
+</div>

@@ -61,6 +61,69 @@ namespace KAKE_ED_BE.Models
             }
         } // end GetAllClinicalInfo class
 
+        public int AddClinical(Clinical clinical)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    string sqlQuery = "INSERT into dbo.Clinicalnfo (Id,Name,WhatIs,WhatCauses,Symptons,Treatment,HomeCare,WhatToExpect,SeekingHelp,WantToKnowMore,WaysToReduce,FollowUp,Prevention,WhyDoesThisHappen,ReturnImmedIf,Instructions,WhyIsItAProb,WhatShouldIDo,HowIsItSpread,StoppingSpread, ProbsToWatchFor) VALUES (" + clinical.Id + ","
+                        + clinical.Name + "," + clinical.WhatIs + "," + clinical.WhatCauses + "," + clinical.Symptons + "," + clinical.Treatment + "," + clinical.HomeCare + "," + clinical.WhatToExpect + "," + clinical.SeekingHelp + "," + clinical.WantToKnowMore + "," + clinical.FollowUp + "," + clinical.Prevention + "," + clinical.WhyDoesThisHappen + "," + clinical.ReturnImmedIf
+                + "," + clinical.Instructions + "," + clinical.WhyIsItAProb + "," + clinical.WhatShouldIDo + "," + clinical.HowIsItSpread + "," + clinical.StoppingSpread + "," + clinical.ProbsToWatchFor + ")";
+                    SqlCommand cmd = new SqlCommand(sqlQuery, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close(); 
+                }
+                return 1;
+            }
+            catch
+            {
+                throw; 
+            }
+         }
+
+        public int UpdateClinical(Clinical clinical)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    //add all columns
+                    string sqlQuery = "Update dbo.Clinicalnfo Set Name=" + clinical.Name + ", WhatIs=" + clinical.WhatIs + ", WhatCauses=" + clinical.WhatCauses + " where Id=" + clinical.Id;  
+                    SqlCommand cmd = new SqlCommand(sqlQuery, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+                return 1;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        public int DeleteClinical(int id)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    string sqlQuery = "DELETE * FROM dbo.Clinicalnfo WHERE id=" + id;
+                    SqlCommand cmd = new SqlCommand(sqlQuery, con);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+                return 1;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
         //Get the details of a particular employee
         public Clinical GetClinicalData(int id)
         {

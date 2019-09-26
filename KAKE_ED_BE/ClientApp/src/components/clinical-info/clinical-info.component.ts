@@ -20,7 +20,6 @@ export class ClinicalInfoComponent implements OnInit {
   }
 
   getAllClinics(): void {
-   // this.clinicService.getAllClinic().subscribe(res => this.clinicalInfo = res);
     this.clinicService.getAllClinic().subscribe(res => 
       res.forEach(element => {
         this.clinicalInfo.push(element);

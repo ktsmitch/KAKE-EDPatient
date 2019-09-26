@@ -1,0 +1,106 @@
+
+h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Signika', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 auto;
+    }
+    
+    .form-group{
+    margin: 0 auto;
+    text-align: center; 
+    }
+    
+    .noData{
+        border: #333 2px solid;
+        text-align: center;
+        margin: 0 auto;
+        width: 20em;
+
+    }
+    
+    label {
+        margin-bottom: 10px;
+        font-family: 'Signika', sans-serif;
+    }
+  
+    
+    h2 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 0 auto;
+    text-align:center;
+    margin-top: 20px;
+    }
+    
+    mat-radio-button{
+    margin-right: 5px;
+    }
+    
+    textarea {
+    width: 80%;
+    margin-top: 5px;
+    }
+    
+    
+    .container {
+    margin-top: 50px;
+    text-align: center; 
+    }
+    
+    .form-control{
+    margin: 0 auto;
+    width: 50%;
+    height: 40px;
+    }
+    
+    label{
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    }
+    
+    h3 {
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    }
+    
+    
+    .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+    }
+    
+    table{
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+        font-family: 'Catamaran', sans-serif;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    td{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* text-align: center; */
+    }
+
+    button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: 'Signika', sans-serif;
+
+    }

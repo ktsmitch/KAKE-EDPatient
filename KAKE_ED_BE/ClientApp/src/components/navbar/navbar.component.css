@@ -11,7 +11,21 @@ mat-toolbar-row {
 
   input{
     font-family: 'Catamaran', sans-serif; 
+    font-size: 15px;
+    width: 10em;
+    color: white;
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
   }
+  
+::-webkit-input-placeholder {
+  text-align: left;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 15px; 
+  color: white;
+}
 
 
   span {
