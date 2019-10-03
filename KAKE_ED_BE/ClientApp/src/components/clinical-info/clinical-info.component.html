@@ -14,7 +14,7 @@
 <ul class="alphabet">
   <li *ngFor="let clinic of clinicalInfo">
     <a routerLink="/detail/{{clinic.id}}">
-    <span class="badge">{{clinic.id}}</span> {{clinic.name}}
+    {{clinic.name}}
     </a>  
   </li>
 </ul>

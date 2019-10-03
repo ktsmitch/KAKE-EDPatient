@@ -67,9 +67,11 @@ namespace KAKE_ED_BE.Models
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    string sqlQuery = "INSERT into dbo.Clinicalnfo (Id,Name,WhatIs,WhatCauses,Symptons,Treatment,HomeCare,WhatToExpect,SeekingHelp,WantToKnowMore,WaysToReduce,FollowUp,Prevention,WhyDoesThisHappen,ReturnImmedIf,Instructions,WhyIsItAProb,WhatShouldIDo,HowIsItSpread,StoppingSpread, ProbsToWatchFor) VALUES (" + clinical.Id + ","
-                        + clinical.Name + "," + clinical.WhatIs + "," + clinical.WhatCauses + "," + clinical.Symptons + "," + clinical.Treatment + "," + clinical.HomeCare + "," + clinical.WhatToExpect + "," + clinical.SeekingHelp + "," + clinical.WantToKnowMore + "," + clinical.FollowUp + "," + clinical.Prevention + "," + clinical.WhyDoesThisHappen + "," + clinical.ReturnImmedIf
-                + "," + clinical.Instructions + "," + clinical.WhyIsItAProb + "," + clinical.WhatShouldIDo + "," + clinical.HowIsItSpread + "," + clinical.StoppingSpread + "," + clinical.ProbsToWatchFor + ")";
+                    Random random = new Random();
+                    int num = random.Next();
+                    string sqlQuery = "INSERT into dbo.Clinicalnfo (Id,Name,WhatIs,WhatCauses,Symptons,Treatment,HomeCare,WhatToExpect,SeekingHelp,WantToKnowMore,WaysToReduce,FollowUp,Prevention,WhyDoesThisHappen,ReturnImmedIf,Instructions,WhyIsItAProb,WhatShouldIDo,HowIsItSpread,StoppingSpread, ProbsToWatchFor) VALUES ('" + num + "' , '" 
+                        + clinical.Name + "' , '" + clinical.WhatIs + "' , '" + clinical.WhatCauses + "' , '" + clinical.Symptons + "' , '" + clinical.Treatment + "' , '" + clinical.HomeCare + "' , '" + clinical.WhatToExpect + "' , '" + clinical.SeekingHelp + "' , '" + clinical.WantToKnowMore + "' , '" + clinical.WaysToReduce + "' , '" + clinical.FollowUp + "' , '" + clinical.Prevention + "' , '" + clinical.WhyDoesThisHappen + "' , '" + clinical.ReturnImmedIf
+                + "' , '" + clinical.Instructions + "' , '" + clinical.WhyIsItAProb + "' , '" + clinical.WhatShouldIDo + "' , '" + clinical.HowIsItSpread + "' , '" + clinical.StoppingSpread + "' , '" + clinical.ProbsToWatchFor + "')";
                     SqlCommand cmd = new SqlCommand(sqlQuery, con);
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -90,7 +92,8 @@ namespace KAKE_ED_BE.Models
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
                     //add all columns
-                    string sqlQuery = "Update dbo.Clinicalnfo Set Name=" + clinical.Name + ", WhatIs=" + clinical.WhatIs + ", WhatCauses=" + clinical.WhatCauses + " where Id=" + clinical.Id;  
+                    string sqlQuery = "Update dbo.Clinicalnfo Set Name= '" + clinical.Name + "' , WhatIs= '" + clinical.WhatIs + "' , WhatCauses='" + clinical.WhatCauses + "' , Symptons= '" + clinical.Symptons + "' , Treatment = '" + clinical.Treatment + "' , HomeCare = '" + clinical.HomeCare + "' , WhatToExpect = '" + clinical.WhatToExpect + "' , SeekingHelp = '" + clinical.SeekingHelp + "' , WantToKnowMore = '" + clinical.WantToKnowMore + "' , WaysToReduce = '" + clinical.WaysToReduce + "' , FollowUp = '" + clinical.FollowUp + "' , Prevention = '" + clinical.Prevention + "' , WhyDoesThisHappen = '" + clinical.WhyDoesThisHappen + "' , ReturnImmedIf = '" + clinical.ReturnImmedIf + "' , Instructions = '" + clinical.Instructions + "' , WhyIsItAProb = '" + clinical.WhyIsItAProb
++ "' , WhatShouldIDo = '" + clinical.WhatShouldIDo + "' , HowIsItSpread = '" + clinical.HowIsItSpread + "' , StoppingSpread = '" + clinical.StoppingSpread + "' , ProbsToWatchFor = '" + clinical.ProbsToWatchFor + "' where Id=" + clinical.Id;
                     SqlCommand cmd = new SqlCommand(sqlQuery, con);
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -110,7 +113,7 @@ namespace KAKE_ED_BE.Models
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    string sqlQuery = "DELETE * FROM dbo.Clinicalnfo WHERE id=" + id;
+                    string sqlQuery = "DELETE FROM dbo.Clinicalnfo WHERE id=" + id;
                     SqlCommand cmd = new SqlCommand(sqlQuery, con);
                     con.Open();
                     cmd.ExecuteNonQuery();

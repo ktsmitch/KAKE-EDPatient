@@ -35,6 +35,7 @@ export class AdminDashboardComponent implements OnInit {
   delete(name, id) {
     const ans = confirm('Do you want to delete "' + name + '" from Clinical Information?');
     if (ans) { 
+      this.clinicalInfo = []; 
       this.clinicService.deleteClinical(id).subscribe(() => {
         this.getAllClinics();
       }, error => console.error(error));

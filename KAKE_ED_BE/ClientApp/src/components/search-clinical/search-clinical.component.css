@@ -15,6 +15,7 @@
 
 .search-result li:hover {
   background-color: #607D8B;
+  color: white;
 }
 
 .search-result li a {

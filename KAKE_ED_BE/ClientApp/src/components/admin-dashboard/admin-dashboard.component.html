@@ -25,7 +25,7 @@
             <td>{{ clinc.id }}</td>
             <td>{{ clinc.name }}</td>
             <td> <a [routerLink]="['/admin/edit/', clinc.id]">Edit</a> |
-                <a [routerLink]="" (click)="delete(clinc.name, clinc.id)">Delete</a>
+                <a  (click)="delete(clinc.name, clinc.id)">Delete</a>
             </td>
         </tr>
     </tbody>

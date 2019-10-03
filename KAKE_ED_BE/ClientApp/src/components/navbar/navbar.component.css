@@ -18,8 +18,13 @@ mat-toolbar-row {
     border-left: none;
     border-right: none;
     border-top: none;
+    outline: none;
   }
   
+  input :focus{
+    outline: none;
+  }
+
 ::-webkit-input-placeholder {
   text-align: left;
   font-family: 'Catamaran', sans-serif;

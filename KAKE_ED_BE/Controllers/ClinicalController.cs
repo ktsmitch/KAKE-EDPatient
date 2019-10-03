@@ -11,9 +11,10 @@ using System.Web.Http.Cors;
 
 namespace KAKE_ED_BE.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "POST,GET,PUT,DELETE,OPTIONS,PATCH")]
     public class ClinicalController : Controller
     {
+   
 
         ClinicalDataAccessLayer objclinical = new ClinicalDataAccessLayer(); 
 

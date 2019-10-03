@@ -6,7 +6,7 @@
     </button>
  <h1> MY ED </h1>
 
- <input matInput  #webSearch  (keyup.enter)="search(webSearch.value)" placeholder="Search..." autocomplete="off" />
+ <input matInput  #webSearch  (keyup.enter)="search(webSearch.value)" placeholder="Search..." onfocus="this.placeholder = ''" autocomplete="off" />
 
 
   </mat-toolbar>
