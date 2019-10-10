@@ -1,24 +1,25 @@
 <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
 <app-navbar></app-navbar>
 <h1>Admin Login</h1>
+
 <div class="container">
 
 <hr />
 
 <form [formGroup]="loginForm" (ngSubmit)="submit()" #formDir="ngForm" novalidate>
 
-    <div class="form-group row">
-        <label class=" control-label col-md-12">Username</label>
-        <div class="col-md-4">
+    <div class="form-group">
+        <label class="control">Username</label>
+        <div class="inp">
             <input class="form-control" type="text" formControlName="username">
         </div>
         <span class="text-danger" *ngIf="username?.invalid && formDir.submitted">
             Username is required.
         </span>
     </div>
-    <div class="form-group row">
-      <label class=" control-label col-md-12">Password</label>
-      <div class="col-md-4">
+    <div class="form-group">
+      <label class="control">Password</label>
+      <div class="inp">
           <input class="form-control" type="password" formControlName="password">
       </div>
       <span class="text-danger" *ngIf="password?.invalid && formDir.submitted">
@@ -33,6 +34,6 @@
         </span>
     </div>
 </form>
+</div>
 
 <app-footer></app-footer>
-</div>

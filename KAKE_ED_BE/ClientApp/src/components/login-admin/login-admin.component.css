@@ -7,3 +7,53 @@
     margin: 0 auto;
     text-align:center;
 } */
+
+.control{
+    margin-top: 20px;
+}
+
+.form-group {
+    margin: 0 auto;
+    text-align: center;
+} 
+
+.inp{ 
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-control{
+    text-align:center;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 20px; 
+    size: 30px;
+    font-family: 'Signika', sans-serif;
+    color: #37474F;
+  }
+
+  
+  button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: 'Signika', sans-serif;
+    color: #37474F;
+    }
+
+    button:hover{
+        background-color: #37474F;
+
+    }
+
+    form{
+        margin: 0 auto;
+    }

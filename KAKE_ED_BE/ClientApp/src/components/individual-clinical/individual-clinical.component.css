@@ -3,26 +3,26 @@ button {
     margin-bottom: 6em;
     background-color: #eee;
     width: auto ;
-    height: 2.5em;
+    height: auto;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
     cursor: hand;
     font-family: 'Signika', sans-serif;
+    color:#37474F;
   }
-  mat-icon{
-    padding-right: 5px;
+  .icon{
+    width: 50px;
+    margin: 0 auto;
+    color: #37474F;
   }
   
-  button:hover {
-    background-color: #cfd8dc;
-  }
-  button:disabled {
-    background-color: #eee;
-    color: #ccc;
-    cursor: auto;
-  }
+ 
+  button:hover{
+    background-color: #37474F;
+
+}
 
   .info {
     padding-left: 3em;
@@ -33,7 +33,7 @@ button {
     display: inline-block;
     width: 3em;
     margin: .5em 0;
-    color: #607D8B;
+    color: #37474F;
     font-weight: bold;
   }
 
@@ -43,6 +43,12 @@ button {
     font-family: 'Signika', sans-serif;
   }
 
-  h1{
+  h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 20px; 
+    size: 30px;
     font-family: 'Signika', sans-serif;
+    color: #37474F;
   }

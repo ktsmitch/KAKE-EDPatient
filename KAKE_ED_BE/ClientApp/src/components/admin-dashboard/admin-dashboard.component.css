@@ -1,3 +1,42 @@
 table {
     width: 100%;
 }
+
+.container{
+    margin-bottom: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 20px; 
+    size: 30px;
+    font-family: 'Signika', sans-serif;
+    color: #37474F;
+  }
+
+  
+h3 {
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+  .buttons {
+      font-weight:bold;
+      color: #607D8B;
+  }   
+
+  .buttons:hover {
+    font-weight:bold;
+    color: #607D8B;
+    text-decoration: underline;
+    cursor: hand;
+}   
+
+  a{
+    font-weight:bold;
+    color: #607D8B;
+  }

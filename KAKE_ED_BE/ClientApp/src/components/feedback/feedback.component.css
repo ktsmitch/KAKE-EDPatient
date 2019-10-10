@@ -1,14 +1,13 @@
-
 h1 {
-margin: 0.8em 0 0.5em 0;
-color: #333;
-font-weight: normal;
-font-family: 'Signika', sans-serif;
-font-size: 36px;
-line-height: 40px;
-margin: 0 auto;
-}
-
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 20px; 
+    size: 30px;
+    font-family: 'Signika', sans-serif;
+    color: #37474F;
+  }
+  
 .form-group{
 margin: 0 auto;
 text-align: center; 

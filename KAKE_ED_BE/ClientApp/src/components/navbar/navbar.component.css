@@ -1,12 +1,17 @@
 h1{ 
-    font-weight: bold;
-    size: 100px;
+    font-size: 2em;
     font-family: 'Bree Serif', serif;
     margin: 0 auto;
+    color: #37474F;
+    padding-left: 100px;
 }
 
 mat-toolbar-row {
     justify-content: space-between;
+  }
+
+  mat-icon{
+    color:white;
   }
 
   input{

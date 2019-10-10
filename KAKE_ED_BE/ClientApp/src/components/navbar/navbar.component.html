@@ -1,14 +1,11 @@
 
-<div>
-<mat-toolbar color="primary"> 
+<mat-toolbar color="accent"> 
   <button mat-icon-button [mat-menu-trigger-for]="menu">
       <mat-icon>more_vert</mat-icon>
     </button>
- <h1> MY ED </h1>
+ <h1>MY ED</h1>
 
  <input matInput  #webSearch  (keyup.enter)="search(webSearch.value)" placeholder="Search..." onfocus="this.placeholder = ''" autocomplete="off" />
-
-
   </mat-toolbar>
   <mat-menu x-position="before" #menu="matMenu">
     <button mat-menu-item  routerLink="/home"> <mat-icon>home</mat-icon> Home</button>
@@ -20,6 +17,4 @@
   </mat-menu>
 
 
-  
-</div>
   
