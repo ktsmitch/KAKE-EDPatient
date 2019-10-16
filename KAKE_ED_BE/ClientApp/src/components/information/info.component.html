@@ -1,0 +1,229 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+<app-navbar></app-navbar>
+<h1>Department Information</h1>
+
+
+
+<!--DEPARTMENT INFORMATION-->
+ <div class="container" fxLayout="row" fxLayout.xxs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="40%">
+    <h3>1. Arrival</h3>
+    <img mat-card-image class="img" src="../../assets/img/arrival2.jpg"/>
+    <div>
+      <table>
+          <tr>
+          <td>
+          <br>On arrival to the Emergency & Trauma Centre you will be seen by the Triage Nurse to assess 
+          your condition so we can send you to the right area to be treated in the department. More serious
+          cases will be given priority.
+          <br>
+          <br>Once seen by the Triage Nurse you will be seen by a member of your Administration team to ensure 
+          we have your contact details such as Medicare and private health status, your local doctor and 
+          next of kin. 
+          <br>
+          <br>Our Administration Officer can also help with issues relating to charges that will be incurred by
+          non-Medicare card holders. 
+          <td>
+          </td>
+          </tr>
+      </table>
+    </div>
+  </div>
+  <div fxFlex="40%">
+    <h3>2. Treatment</h3>
+    <img mat-card-image class="img" src="../../assets/img/treatment.jpg">
+      <div>
+          <table>
+              <tr>
+              <td>
+                 <br>Once you have seen the Triage Nurse and Administration Officer you will be sent to your 
+                 Resuscitation Area, Acute Area or Fast Track Area.
+                 <br> Investigations and treatments will determine if you need to be admitted or can go home.
+                 <br>These can take some time. Please ask if you are unsure what is happening or your condition
+                 gets worse whilst waiting.
+                 <br>
+                 <br><span>Please tell the Emergency & Trauma Centre Staff about:</span><br>
+                 <br>- Any health problems you have
+                 <br>- Medications and treatments you take 
+                 <br>- If you are pregnant or breastfeeding
+                 <br>- Allergies
+                 <br>- If you may be infectious to others or have been exposed to someone with an infectious illness
+                 <br>- If you have recently travelled overseas 
+              <td>
+              </td>
+              </tr>
+          </table>
+      </div>
+  </div>
+  <div fxFlex="40%">
+      <h3>3. Outcome</h3>
+    <img mat-card-image class="img" src="../../assets/img/outcome2.jpg">
+    <div>
+      <p>
+        <br>Most of our patients will get to go home. If you do have to be admitted it can take some
+        time for a hospital bed to be ready. Until then you will be cared for by Emergency & Trauma Centre 
+        staff. 
+      </p>      
+    </div>
+  </div>
+</div>
+
+
+
+<!----------------------------INFORMATION ON STAFF--------------------------------->
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h2 id="toolbarArrival"> Emergency & Trauma Centre Staff</h2>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div>
+  <table>
+      <tr>
+      <td>
+      <br>The Emergency & Trauma Centre is staffed by a large team including specialist 
+      emergency physicians, specialist emergency nurses, allied health and administrative 
+      staff. Scrubs are worn to help identify staff.
+      <br>
+      <br> Hover over each Staff Member to find out what they do:
+      </td>
+      </tr>
+  </table>
+</div>
+
+
+<!------------------------------STAFF ICON INFORMATION ------------------------------->
+<div class="container" fxLayout="row" fxLayout.xxs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+  <div fxFlex="10%">
+    <button mat-raised-button
+        matTooltip="I'm a Doctor!"
+        matTooltipPosition="below"
+        aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+        class="example-action-button">
+        <img mat-card-image class="img" src="../../assets/img/Black.png"/>
+    </button>
+  </div>
+  <div fxFlex="10%">
+    <button mat-raised-button
+      matTooltip="I'm a Doctor!"
+      matTooltipPosition="below"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+      class="example-action-button">
+      <img mat-card-image class="img" src="../../assets/img/Dark-Blue.png"/>
+    </button>
+  </div>
+  <div fxFlex="10%">
+    <button mat-raised-button
+      matTooltip="I'm a Doctor!"
+      matTooltipPosition="below"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+      class="example-action-button">
+      <img mat-card-image class="img" src="../../assets/img/Light-Red.png"/>
+    </button>
+  </div>
+  <div fxFlex="10%">
+    <button mat-raised-button
+      matTooltip="I'm a Nurse Practitioner!"
+      matTooltipPosition="below"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+      class="example-action-button">
+      <img mat-card-image class="img" src="../../assets/img/Grey.png"/>
+   </button> 
+  </div>
+  <div fxFlex="10%">
+    <button mat-raised-button
+      matTooltip="I'm a Nurse!"
+      matTooltipPosition="below"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+      class="example-action-button">
+      <img mat-card-image class="img" src="../../assets/img/Dark-Green.png"/>
+    </button>
+  </div>
+  <div fxFlex="10%">
+    <button mat-raised-button
+      matTooltip="I'm an Assistant Nurse!"
+      matTooltipPosition="below"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+      class="example-action-button">
+      <img mat-card-image class="img" src="../../assets/img/Light-Green.png"/>
+    </button>
+  </div>
+  <div fxFlex="10%">
+    <button mat-raised-button
+      matTooltip="I'm an Administrator"
+      matTooltipPosition="below"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+      class="example-action-button">
+      <img mat-card-image class="img" src="../../assets/img/Red.png"/>
+    </button>
+  </div>
+  <div fxFlex="10%">
+    <button mat-raised-button
+      matTooltip="I'm a Physiotherapist!"
+      matTooltipPosition="below"
+      aria-label="Button that displays a tooltip with a customized delay in showing and hiding"
+      class="example-action-button">
+      <img mat-card-image class="img" src="../../assets/img/Light-Blue.png"/>
+    </button>
+  </div>
+</div>
+
+
+
+<!------------------------INFORMATION ON TIME TAKEN------------------------------>
+<mat-toolbar>
+    <mat-toolbar-row>
+      <h2>Time Spent in Emergency Departments</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+    <table>
+        <tr>
+        <td>
+          <br> This section shows data related to presentations (visits) to this 
+          hospital’s emergency department. Each visit is counted separately, 
+          so the number of presentations may not be equal to the number of people 
+          seen or treated by the emergency department if some people visited more 
+          than once. Here, ‘patients’ refers to the number of presentations.
+          <br>           
+          <br> Time spent by all patients in the emergency department
+          In 2017–18, the median length of time for all patients to depart this hospital’s 
+          emergency department was 3 hours 3 minutes. The length of time until most patients 
+          (90%) had departed was 7 hours 56 minutes, compared to its national peer group 
+          performance of 8 hours 14 minutes.
+        <p class = "imgCenter">
+        <br><img id=statistics src="../../assets/img/waitingTime.JPG" class= "waitingTime" width="50%" height="20%">
+       </p>
+        </td>
+        </tr>
+    </table>
+  </div>
+  
+
+        
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h2 id="Useful Links">Useful Links</h2>
+  </mat-toolbar-row>
+</mat-toolbar>
+  <h3>Here are some useful links related to the Emergency Department:</h3>
+  <div>
+    <table>
+        <tr>
+        <td>
+       <br>For information on Parking and Transport:
+      <a href="https://metronorth.health.qld.gov.au/rbwh/patients-and-visitors/parking-and-transport">Click Here</a>
+      <br>For information on Food, Shops and Services: 
+      <a href="https://metronorth.health.qld.gov.au/rbwh/patients-and-visitors/food-shops-and-services">Click Here</a>
+      <br>For more information on Time Spent in the Emergency Department: 
+      <a href= "https://www.myhospitals.gov.au/hospital/310000201/royal-brisbane-and-womens-hospital/emergency-department">Click Here</a>   
+      <br>For more general information on the operations of the Emergency Department: 
+      <a href="https://metronorth.health.qld.gov.au/rbwh/healthcare-services/emergency">Click Here</a>
+        </td>
+        </tr>
+    </table>
+  </div>
+ 
+
+<!--BACK BUTTON-->
+<button id="button2" (click)="goBack()"><mat-icon>keyboard_arrow_left</mat-icon></button>
+<app-footer></app-footer>

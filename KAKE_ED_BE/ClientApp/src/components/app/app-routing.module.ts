@@ -11,12 +11,16 @@ import {AdminDashboardComponent} from '../admin-dashboard/admin-dashboard.compon
 import {CreateClinicalComponent} from '../create-clinical/create-clinical.component';
 import {LoginAdminComponent} from '../login-admin/login-admin.component'; 
 import { CanActivateService } from './can-activate.service';
+import { InformationComponent } from '../information/info.component';
+import { MapInfoComponent } from '../map-info/map-info.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'clinical', component: ClinicalInfoComponent },
-  { path: 'general', component: GeneralInfoComponent },
   { path: 'feedback', component: FeedbackComponent },
+  { path: 'general', component: GeneralInfoComponent },
+  { path: 'information', component: InformationComponent },
+  { path: 'map', component: MapInfoComponent },
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'search/:term', component: SearchWebsiteComponent },

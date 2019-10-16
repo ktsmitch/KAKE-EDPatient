@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
-declare const sendDataToServer: any; 
+declare const sendDataToServer: any;
+
 @Component({
   selector: 'app-feedback',
   templateUrl: './feedback.component.html',
@@ -8,7 +10,8 @@ declare const sendDataToServer: any;
 })
 export class FeedbackComponent implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location) 
+  {}
 
   ngOnInit() {
 
@@ -17,5 +20,6 @@ export class FeedbackComponent implements OnInit {
   onClick(){
     sendDataToServer();
   }
+
 
 }

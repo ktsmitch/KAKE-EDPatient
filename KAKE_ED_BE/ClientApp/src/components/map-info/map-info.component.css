@@ -1,0 +1,88 @@
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+h1 {
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Orienta', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 auto;
+    }
+
+    button {
+      background-color: #eee;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      cursor: hand;
+      font-family: 'Signika', sans-serif;
+      color: #37474F;
+      margin: 0 auto;
+      
+      }
+    
+      button:hover{
+          background-color: #37474F;
+          color: white; 
+    
+      }
+
+/* .but {
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:none;
+    border: none;
+    outline: none;
+} */
+
+.container{
+    margin-top: 50px; 
+    text-align: center; 
+
+}
+
+.img {
+    width: 100%;
+    margin-bottom: 18%;
+  }
+  .card-picture {
+    width: 23%;
+    margin-bottom: 2%;
+  }
+  .container {
+    min-height: 100%;
+    width: 100%;
+  }
+
+  button {
+    margin-top: 4em;
+    margin-left: 45%;
+    margin-bottom: 6em;
+    background-color: #eee;
+    width: 10% ;
+    height: 2.5em;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    text-align: center;
+    color: #37474F;
+  }
+  
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+
+  .map-image {
+    width: 100%;
+  }
+

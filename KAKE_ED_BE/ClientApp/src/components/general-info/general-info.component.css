@@ -1,12 +1,12 @@
 h1 {
-  text-align: center;
-  margin: 0 auto;
-  font-weight: bold;
-  padding-top: 20px; 
-  size: 30px;
-  font-family: 'Signika', sans-serif;
-  color: #37474F;
-}
+    margin: 0.8em 0 0.5em 0;
+    color: #333;
+    font-weight: normal;
+    font-family: 'Signika', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 auto;
+    }
 
 button{
     width: 300px;
@@ -14,11 +14,33 @@ button{
     border: thick;
     border-radius: 3px;
     border-color: black;
-    
 }
 
 h2 {
-    font-family: 'Signika', sans-serif;
+  text-align: center;
+  margin-top: 38%;
+  font-size: 50px;
+  color: rgb(250, 250, 250);
+  text-shadow: 1px 1px 1px #254b64,
+        1px 2px 1px #254b64,
+        1px 3px 1px #254b64,
+        1px 4px 1px #254b64,
+        1px 5px 1px #254b64,
+        1px 6px 1px #254b64,
+        1px 7px 1px #254b64,
+        1px 8px 1px #254b64,
+        1px 9px 1px #254b64,
+        1px 10px 1px #254b64,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+  }
 }
 
 
@@ -41,13 +63,6 @@ h2 {
 
 }
 
-table{ 
-  margin-bottom: 100px;
-}
-
-mat-icon{
-  padding-right: 10px;
-}
 
 .img {
     width: 100%;
@@ -62,8 +77,71 @@ mat-icon{
     width: 100%;
   }
 
-  td {
-    padding-left: 5em;  
-    padding-bottom: 1em;  
-    font-family: 'Catamaran', sans-serif; 
-  }
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 10;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-image: url("../../assets/img/mapBackground2.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  --left-button-hover-color: rgba(235, 225, 225, 0.884); 
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-image: url("../../assets/img/information2.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  --right-button-hover-color:  rgba(235, 225, 225, 0.884);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 4rem; 
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none; 
+  transform: translateX(-50%);
+}
+
+.split.left .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+  color: #37474F;
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+  color: #37474F;
+}

@@ -78,6 +78,7 @@ export class CreateClinicalComponent implements OnInit {
               this._router.navigate(['/admin']);
             }, error => console.error(error));
         }
+        
       }
     
       cancel() {

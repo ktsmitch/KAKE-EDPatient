@@ -1,31 +1,121 @@
 <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
 <app-navbar></app-navbar>
 
 <h1>Contact</h1>
 <div class="container">
-  <table>
-<tr>
-<td width="50%">
-   <h2>Contact us</h2>
-   <br>Location: Ground floor, Dr James Mayne Building
-   <br>Phone: (07) 3646 8111
-   <br>Fax: (07) 3646 8732
-   <br>
-   <br><span>Patient Liaison Officer</span>
-   <br>Phone: (07) 3646 8216
-   <br>Email: RBWH-PLS@health.qld.gov.au
+
    
-    <h2> Need help outside hours? </h2>
-    For non-urgent medical issues call 13 HEALTH (13 43 25 84) or visit your GP.
-    
-    <br>In an emergency call 000.
-    
-    <h2> Refer a patient </h2>
-    GPs and specialists in the community and in other hospitals can refer a patient by calling the emergency physician “on the floor” via hospital switch on (07) 3646 8111.</td>
-<td width="50%">
-  <div #map style="width:100%;height:400px"></div>
-</td>
-</tr>
-</table>
+
+<mat-toolbar id="Contact Us">
+    <mat-toolbar-row>
+      <h2 id="toolbarContactUs"><mat-icon>phone</mat-icon> CONTACT US</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>       
+        <h6>In the case of an emergency, always call 000.</h6>
+        <div class="row">
+          <div class="column">
+            <h4>Hospital Switchboard</h4>
+            Phone<a href="tel:(07) 3646 8111"> (07) 3646 8111</a> 
+            <br>Fax:<a href="tel:(07) 3646 8732"> (07) 3646 8732</a>
+              </div>
+
+          <div class="column">
+            <h4>Mental Health</h4>
+            <a href="tel: 1300 64 22 55"> MHCALL (1300 64 22 55) </a>     
+              </div>
+
+          <div class="column">
+            <h4>Outpatient Appointments</h4>
+            Phone<a href="tel:(07) 3646 6738"> (07) 3646 6738</a>
+            <br>Email: <a href = "mailto: rbwh-confirmationcentre@health.qld.gov.au"> rbwh-confirmationcentre@health.qld.gov.au</a>
+             </div>
+
+             </div>
+             <h3>For all other enquires, including Women's and newborn services, Careers and staff and Patient and visitor information please visit <a href = "https://metronorth.health.qld.gov.au/rbwh/contact-us"> https://metronorth.health.qld.gov.au/rbwh/contact-us </a> </h3>
+           
+
+
+<mat-toolbar id="Find Us">
+    <mat-toolbar-row>
+      <h2 id="toolbarContactUs"><mat-icon>map</mat-icon> Find Us</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+    <table>
+        <tr>
+        <td>
+        <br>Address:<a href="https://www.google.com/maps/place/Royal+Brisbane+and+Women's+Hospital/@-27.4469624,153.0262242,17z/data=!3m1!4b1!4m5!3m4!1s0x6b9159eb07904e57:0xbbf3362bb279e6c5!8m2!3d-27.4469624!4d153.0284129"> Ground floor, Dr James Mayne Building, Cnr Butterfield St and Bowen Bridge Road, Herston, QLD Australia 4029</a> 
+        <br>
+        <td>
+        </td>
+        </tr>
+    </table>
+    <div #map style="width:95%  ;height:350px; margin: 0 auto;"></div>
+    <br>
+  </div>
+
+   
+
+<mat-toolbar id="Patient Liaison Officer">
+    <mat-toolbar-row>
+      <h2 id="toolbarContactUs"><mat-icon>person</mat-icon> Patient Liaison Officer</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+    <table>
+        <tr>
+        <td>
+        <br>Email: <a href = "mailto: RBWH-PLS@health.qld.gov.au"> RBWH-PLS@health.qld.gov.au</a>
+        <br>Phone:<a href="tel:(07) 3646 8216"> (07) 3646 8216</a>
+        <br>
+        <td>
+        </td>
+        </tr>
+    </table>
+  </div>
+
+  <br>
+
+  <mat-toolbar id="Need help outside hours?">
+    <mat-toolbar-row>
+      <h2 id="toolbarContactUs"><mat-icon>help</mat-icon> Need help outside hours?</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+    <table>
+        <tr>
+        <td>
+        <br> For non-urgent medical issues call <a href="tel: 13 43 25 84"> 13 HEALTH (13 43 25 84) </a>  or visit your GP.
+        <br>
+        <td>
+        </td>
+        </tr>
+    </table>
+  </div>
+
+  <br>
+
+    <mat-toolbar id="Refer a patient">
+    <mat-toolbar-row>
+      <h2 id="toolbarContactUs"><mat-icon>group</mat-icon> Refer a patient</h2>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div>
+    <table>
+        <tr>
+        <td>
+        <br> GPs and specialists in the community and in other hospitals can refer a patient by calling the emergency physician “on the floor” via hospital switch on <a href="tel: (07) 3646 8111"> (07) 3646 8111 </a>
+        <br>
+        <br>
+        <td>
+        </td>
+        </tr>
+    </table>
+  </div>
+
+  <br>
+  <br>
+
 <app-footer></app-footer>
 </div>

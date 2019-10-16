@@ -8,6 +8,8 @@ import { NavbarComponent } from '../navbar/navbar.component';
 import { HomeComponent } from '../home/home.component';
 import { ClinicalInfoComponent } from '../clinical-info/clinical-info.component';
 import { GeneralInfoComponent } from '../general-info/general-info.component';
+import { InformationComponent } from '../information/info.component';
+import { MapInfoComponent } from '../map-info/map-info.component';
 import { FeedbackComponent } from '../feedback/feedback.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from '../contact/contact.component';
@@ -41,7 +43,8 @@ import { LoginAdminComponent } from '../login-admin/login-admin.component';
     AdminDashboardComponent,
     CreateClinicalComponent,
     LoginAdminComponent,
-
+    MapInfoComponent,
+    InformationComponent
     
   ],
   imports: [
@@ -53,7 +56,6 @@ import { LoginAdminComponent } from '../login-admin/login-admin.component';
     FormsModule,
     HttpClientModule,
     FlexLayoutModule,
-
 
     
   ],

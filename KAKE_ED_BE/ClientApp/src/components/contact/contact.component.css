@@ -1,31 +1,99 @@
 h1 {
-    margin: 0.8em 0 0.5em 0;
-    color: #333;
-    font-weight: normal;
-    font-family: 'Signika', sans-serif;
-    font-size: 36px;
-    line-height: 40px;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  padding-top: 20px; 
+  size: 30px;
+  font-family: 'Signika', sans-serif;
+  color: #37474F;
+}
+
+table {
+  margin: 0 auto;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 100%
 }
 
 h2 {
     font-family: 'Signika', sans-serif;
 }
 
+h3 {
+  font-size: 15px;
+  padding-left: 3em;
+  font-family: 'Catamaran', sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+h6 {
+  color: red;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
 span {
     font-weight: bold;
 }
+mat-toolbar-row{
+  background-color: #37474F;
+}
+  
 
-td {
-    text-align: center; 
-    font-family: 'Catamaran', sans-serif;
+.mat-icon {
+   vertical-align: middle;
 }
 
-img {
-    width: 80%;
+.column {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 10px;
+}
+
+.row {
+  font-family: 'Catamaran', sans-serif; 
+  font-size: 16px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container {
-    margin-top: 50px;
-    text-align: center; 
+
+    min-height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+
+h2 {
+  font-family: 'Signika', sans-serif;
+}
+
+span {
+  font-weight: bold;
+}
+
+td {
+  text-align: center; 
+  font-family: 'Catamaran', sans-serif;
+}
+
+img {
+  width: 80%;
+}
+
+.container {
+  margin-top: 50px;
+  text-align: center; 
 }
