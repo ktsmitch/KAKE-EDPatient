@@ -17,6 +17,18 @@ h2 {
     margin: 0 auto;
 }
 
+.image{
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url("../../assets/img/clinical.jpg");
+  background-size: cover;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  
+}
+
 input {
     width: 80%;
 }
@@ -47,9 +59,38 @@ h3 {
 }
 
 
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: 'Signika', sans-serif;
+  color: #37474F;
+  width: 60px;
+  height: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  }
+
+  button:hover{
+      background-color: #37474F;
+      color: white; 
+
+  }
+
+
 .selected {
     background-color: #CFD8DC !important;
     color: white;
+  }
+
+  .content{
+    min-height: 800px;
   }
 
   .alphabet {

@@ -5,7 +5,7 @@
 <h3>Clinical</h3>
 <hr />
 
-<form [formGroup]="clinicalForm" (ngSubmit)="save()" #formDir="ngForm" novalidate>
+<form  [formGroup]="clinicalForm" (ngSubmit)="submit()" #formDir="ngForm" novalidate>
 
     <div class="form-group row">
         <label class=" control-label col-md-12">Name</label>
@@ -126,10 +126,11 @@
     </div>
     <hr />
     <div class="form-group">
-        <button type="submit" class=" btn btn-primary">Save</button>
-        <button class="btn btn-danger" (click)="cancel()">Cancel</button>
+        <button class=" btn btn-primary" type="submit">Save</button>
+        <button class="btn btn-danger"type="button" (click)="cancel()">Cancel</button>
     </div>
 </form>
+
 </div>
 
 <app-footer></app-footer>

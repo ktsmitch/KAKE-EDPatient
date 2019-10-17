@@ -17,7 +17,8 @@ table {
 }
 
 h2 {
-    font-family: 'Signika', sans-serif;
+   font-family: 'Signika', sans-serif;
+  font-size: 24px;
 }
 
 h3 {
@@ -44,6 +45,7 @@ span {
 }
 mat-toolbar-row{
   background-color: #37474F;
+  
 }
   
 
@@ -70,7 +72,6 @@ mat-toolbar-row{
 }
 
 .container {
-
     min-height: 100%;
     width: 100%;
     font-size: 15px;

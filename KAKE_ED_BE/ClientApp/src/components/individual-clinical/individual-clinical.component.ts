@@ -22,6 +22,8 @@ export class IndividualClinicalComponent implements OnInit {
   whatIs: string[]; 
   wantToKnowMore: string[];
   followUp: string[];
+  instruct: string[];
+  reduce: string[];
 
   constructor(
     private route: ActivatedRoute, 
@@ -48,6 +50,8 @@ export class IndividualClinicalComponent implements OnInit {
       this.editWhatIsString(res);
       this.editWantToKnowMoreString(res);
       this.editFollowUpString(res);
+      this.editReduceString(res);
+      this.editInstructionsString(res);
     });
    
   }
@@ -59,6 +63,14 @@ export class IndividualClinicalComponent implements OnInit {
     if(Clinical) {
       if(clin.whatIs != '') {
         this.whatIs = clin.whatIs.split("");
+      }
+    }
+  }
+
+  editReduceString(clin: Clinical){
+    if(Clinical) {
+      if(clin.waysToReduce != '') {
+        this.reduce = clin.waysToReduce.split("");
       }
     }
   }
@@ -98,6 +110,14 @@ export class IndividualClinicalComponent implements OnInit {
     if(Clinical) {
       if(clin.homeCare != '') {
         this.homeCare = clin.homeCare.split("");
+      }
+    }
+  }
+
+  editInstructionsString(clin: Clinical) {
+    if(Clinical) {
+      if(clin.instructions != '') {
+        this.instruct = clin.instructions.split("");
       }
     }
   }

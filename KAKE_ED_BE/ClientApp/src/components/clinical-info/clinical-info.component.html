@@ -5,13 +5,11 @@
 <h1>Clinical Information</h1>
 
 <div class="container">
-
+<div class="image"></div>
 <app-search-clinical></app-search-clinical>
-
 <h3> or </h3>
-
-<h3>Look up alphabetically.... </h3>
-
+<div class ="content">
+<h3>Look up alphabetically </h3>
 <ul class="alphabet">
   <li *ngFor="let clinic of clinicalInfo">
     <a routerLink="/detail/{{clinic.id}}">
@@ -19,7 +17,10 @@
     </a>  
   </li>
 </ul>
-
 </div>
+
+<button class="btn btn-primary" title="Return home" routerLink="/home"> <mat-icon>home</mat-icon></button>  
+</div>
+
 
 <app-footer></app-footer>

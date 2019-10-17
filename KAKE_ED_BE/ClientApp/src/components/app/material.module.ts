@@ -12,7 +12,7 @@ import {
   MatFormFieldModule,
   MatOptionModule,
   MatSelectModule,
-  MatRadioModule
+  MatRadioModule,
 } from '@angular/material';
 
 @NgModule({

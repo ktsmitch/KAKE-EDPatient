@@ -54,6 +54,7 @@ import { LoginAdminComponent } from '../login-admin/login-admin.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     FlexLayoutModule,
 

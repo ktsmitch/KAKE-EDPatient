@@ -14,6 +14,7 @@ export class CreateClinicalComponent implements OnInit {
   title = 'Create';
   clincId: number;
   errorMessage: any;
+  loading: boolean = false;
   clinicalList: Clinical[];
 
   constructor(private _fb: FormBuilder, private _avRoute: ActivatedRoute,
@@ -23,7 +24,7 @@ export class CreateClinicalComponent implements OnInit {
       }
 
       this.clinicalForm = this._fb.group({
-        id: 0,
+        id: -1,
         name: ['', [Validators.required]],
         whatIs: ['', [Validators.required]],
         whatCauses: ['', [Validators.required]],
@@ -53,7 +54,7 @@ export class CreateClinicalComponent implements OnInit {
     this._clinicService.getAllClinic().subscribe(res =>
       this.clinicalList = res);
 
-      if (this.clincId > 0) {
+      if (this.clincId > -1) {
         this.title ='Edit';
         this._clinicService.getClinic(this.clincId).subscribe(res => {
           this.clinicalForm.setValue(res);
@@ -61,23 +62,22 @@ export class CreateClinicalComponent implements OnInit {
         }
       }
   
-      save() {
-
-        if (!this.clinicalForm.valid) {
+      submit() {
+        if(this.clinicalForm.value.name === '') {
           return;
         }
-    
-        if (this.title === 'Create') {
+        if (this.title == 'Create') {
           this._clinicService.saveClinical(this.clinicalForm.value)
             .subscribe(() => {
               this._router.navigate(['/admin']);
             }, error => console.error(error));
-        } else if (this.title === 'Edit') {
+        } else if (this.title == 'Edit') {
           this._clinicService.updateClinic(this.clinicalForm.value)
             .subscribe(() => {
               this._router.navigate(['/admin']);
             }, error => console.error(error));
-        }
+          
+          }
         
       }
     

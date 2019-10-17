@@ -2,7 +2,8 @@ button {
     margin-top: 4em;
     margin-bottom: 6em;
     background-color: #eee;
-    width: auto ;
+    width: 5% ;
+    margin-left: 47.5%;
     height: auto;
     border: none;
     padding: 5px 10px;
@@ -18,15 +19,25 @@ button {
     color: #37474F;
   }
   
- 
+ .container {
+   width: 100%;
+ }
+
   button:hover{
     background-color: #37474F;
 
 }
 
   .info {
-    padding-left: 3em;
+   margin: 0 auto;
+   width: 97%;
+  font-family: 'Catamaran', sans-serif; 
+  font-size: 14px;
+  }
+
+  .text{
     font-family: 'Catamaran', sans-serif; 
+    font-size: 14px;
   }
 
   label {
@@ -36,10 +47,41 @@ button {
     color: #37474F;
     font-weight: bold;
   }
+  .tool {
+    text-align: left;
+    background-color: #37474F;
+    width: 97%;
+    margin: 0 auto; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  mat-toolbar {
+  text-align: left;
+  background-color: #37474F;
+  width: 100%;
+  margin: 0 auto; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul{
+   list-style-type: none;
+}
+
+li {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+mat-toolbar-row{
+  vertical-align: middle; 
+}
 
   h2 {
     text-align: center;
-    margin: 0 0 auto;
+    vertical-align: middle;
+    margin: 20 0 auto;
+    font-size: 24px;
     font-family: 'Signika', sans-serif;
   }
 
