@@ -1,0 +1,14 @@
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\MyED.test.deps.json
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\MyED.test.runtimeconfig.json
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\MyED.test.runtimeconfig.dev.json
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\MyED.test.dll
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\KAKE_ED_BE.dll
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\bin\Debug\netcoreapp2.1\KAKE_ED_BE.pdb
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\obj\Debug\netcoreapp2.1\MyED.test.csprojAssemblyReference.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\obj\Debug\netcoreapp2.1\MyED.test.csproj.CoreCompileInputs.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\obj\Debug\netcoreapp2.1\MyED.test.AssemblyInfoInputs.cache
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\obj\Debug\netcoreapp2.1\MyED.test.AssemblyInfo.cs
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\MyED.test\obj\Debug\netcoreapp2.1\MyED.test.csproj.CopyComplete

@@ -63,7 +63,7 @@ export class CreateClinicalComponent implements OnInit {
       }
   
       submit() {
-        if(this.clinicalForm.value.name === '') {
+        if(this.clinicalForm.value.name === '' || this.clinicalForm.value.whatIs === ''  ) {
           return;
         }
         if (this.title == 'Create') {

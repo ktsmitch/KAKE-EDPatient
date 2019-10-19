@@ -1,10 +1,44 @@
 <app-navbar></app-navbar>
+<div *ngIf="innerWidth > 600; else elseBlock" class="container" fxLayout="row" fxLayout.xxs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+        <div fxFlex="50%">
+                <mat-card class="clinicalMat" routerLink="/clinical">
+                  <mat-card-title>Clinical Information</mat-card-title> 
+                  <mat-card-content><mat-icon>local_hospital</mat-icon></mat-card-content> 
+                  <img mat-card-image class="img" src="../../assets/img/clinicalMat2.jpg"/>
+                </mat-card>
+              </div>
+              
+        <div fxFlex="50%">
+    <mat-card class="generalMat" routerLink="/general">
+                <mat-card-title>General Information </mat-card-title>
+                <mat-card-content><mat-icon>info</mat-icon></mat-card-content> 
+      <img mat-card-image class="img" src="../../assets/img/GFMAT2.jpg"/>
+    </mat-card>
+  </div>
+      <div fxFlex="50%">
+        <mat-card class="feedbackMat" routerLink="/feedback">
+                <mat-card-title>Feedback </mat-card-title>
+                <mat-card-content><mat-icon>mood</mat-icon> </mat-card-content>
+          <img mat-card-image class="img" src="../../assets/img/feedbackMat.jpg"/>
+        </mat-card>
+      </div>
 
-<div> 
-        <mat-card routerLink="/clinical">
+
+      <div fxFlex="50%">
+        <mat-card class="contactMat" routerLink="/contact">
+                <mat-card-title>Contact </mat-card-title>
+                <mat-card-content><mat-icon>call</mat-icon> </mat-card-content>
+          <img mat-card-image class="img" src="../../assets/img/contactMat2.jpg"/>
+        </mat-card>
+      </div>
+</div>
+
+<ng-template #elseBlock>
+<div id="smallScreen"> 
+        <mat-card id="clinic" routerLink="/clinical">
         <mat-card-title>Clinical Information </mat-card-title> 
         <mat-card-content><mat-icon>local_hospital</mat-icon></mat-card-content> 
-        </mat-card>
+      </mat-card>
         
         <mat-card routerLink="/general">
           <mat-card-title>General Information </mat-card-title>
@@ -17,8 +51,9 @@
         </mat-card>
         
         <mat-card routerLink="/contact">
-                <mat-card-title>Contact </mat-card-title>
-                <mat-card-content><mat-icon>call</mat-icon> </mat-card-content>
+        <mat-card-title>Contact </mat-card-title>
+        <mat-card-content><mat-icon>call</mat-icon> </mat-card-content>
         </mat-card>
-</div>
+      </div>
+    </ng-template>
 <app-footer></app-footer>

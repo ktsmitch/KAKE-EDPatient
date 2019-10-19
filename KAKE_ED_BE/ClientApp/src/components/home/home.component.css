@@ -6,6 +6,21 @@ mat-card {
       font-family: 'Signika', sans-serif;
   }
 
+  
+@media screen and (max-width: 600px) {
+    .bigScreen {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+
+  @media screen and (max-width: 1024px) {
+    .smallScreen {
+        display: none !important;
+        visibility: hidden;
+    }
+}
+
   .title{
       font-size: 30px;
       margin: 10px;
@@ -16,4 +31,47 @@ mat-card {
 
   mat-card:hover {
     cursor: pointer;
+  }
+
+  .clinicalMat {
+    margin-top: 20%;
+    height: 100%;
+
+  }
+
+  .clinicalMat .img {
+    margin-top: 18%;
+  }
+
+  .generalMat {
+    margin-top: 20%;
+    height: 100%;
+
+  }
+
+  .generalMat .img {
+    margin-top: 18%;
+  }
+
+  .feedbackMat {
+    margin-top: 20%;
+    height: 100%;
+ 
+  }
+
+  .feedbackMat .img {
+    margin-top: 18%;
+  }
+
+  .contactMat {
+    margin-top: 20%;
+    height: 100%;
+  }
+
+  .contactMat .img {
+    margin-top: 18%;
+  }
+
+  .mat-card-title {
+    font-size: 12px;
   }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KAKE_ED_BE", "KAKE_ED_BE\KAKE_ED_BE.csproj", "{33261020-B03A-4AAB-AD32-E146D1D8429D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KAKE_ED_BE", "KAKE_ED_BE\KAKE_ED_BE.csproj", "{33261020-B03A-4AAB-AD32-E146D1D8429D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
