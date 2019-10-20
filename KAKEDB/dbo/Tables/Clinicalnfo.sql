@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[Clinicalnfo] (
+    [Id]                INT            NOT NULL,
+    [Name]              NVARCHAR (MAX) NOT NULL,
+    [WhatIs]            NVARCHAR (MAX) NOT NULL,
+    [WhatCauses]        NVARCHAR (MAX) NULL,
+    [Symptons]          NVARCHAR (MAX) NULL,
+    [Treatment]         NVARCHAR (MAX) NULL,
+    [HomeCare]          NVARCHAR (MAX) NULL,
+    [WhatToExpect]      NVARCHAR (MAX) NULL,
+    [SeekingHelp]       NVARCHAR (MAX) NULL,
+    [WantToKnowMore]    NVARCHAR (MAX) NULL,
+    [WaysToReduce]      NVARCHAR (MAX) NULL,
+    [FollowUp]          NVARCHAR (MAX) NULL,
+    [Prevention]        NVARCHAR (MAX) NULL,
+    [WhyDoesThisHappen] NVARCHAR (MAX) NULL,
+    [ReturnImmedIf]     NVARCHAR (MAX) NULL,
+    [Instructions]      NVARCHAR (MAX) NULL,
+    [WhyIsItAProb]      NVARCHAR (MAX) NULL,
+    [WhatShouldIDo]     NVARCHAR (MAX) NULL,
+    [HowIsItSpread]     NVARCHAR (MAX) NULL,
+    [StoppingSpread]    NVARCHAR (MAX) NULL,
+    [ProbsToWatchFor]   NVARCHAR (MAX) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,8 +9,11 @@ namespace KAKE_ED_BE.Models
     public class Clinical
     {
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string WhatIs { get; set; }
+        [Required]
         public string WhatCauses { get; set; }
         public string Symptons { get; set; }
         public string Treatment { get; set; }

@@ -1,0 +1,101 @@
+20/10/2019 12:35:24 PM	This log contains information about the import schema operation into project 'KAKEDB' on computer 'DESKTOP-I19NO7E' by user 'ktsmi'.
+20/10/2019 12:35:24 PM	Import of database schema has started.
+20/10/2019 12:35:31 PM	Gathering error messages
+20/10/2019 12:35:31 PM	Gathering cryptographic providers
+20/10/2019 12:35:31 PM	Gathering credentials
+20/10/2019 12:35:31 PM	Gathering logins
+20/10/2019 12:35:31 PM	Gathering server roles
+20/10/2019 12:35:31 PM	Gathering server role memberships
+20/10/2019 12:35:31 PM	Gathering linked servers
+20/10/2019 12:35:31 PM	Gathering linked server logins
+20/10/2019 12:35:31 PM	Gathering routes
+20/10/2019 12:35:31 PM	Gathering ddl triggers
+20/10/2019 12:35:31 PM	Gathering encrypted and clr ddl triggers
+20/10/2019 12:35:31 PM	Gathering event notifications
+20/10/2019 12:35:31 PM	Gathering server audits
+20/10/2019 12:35:31 PM	Gathering server audit specifications
+20/10/2019 12:35:31 PM	Gathering event notifications
+20/10/2019 12:35:42 PM	Gathering database credentials
+20/10/2019 12:35:42 PM	Gathering database options
+20/10/2019 12:35:42 PM	Gathering generic database scoped configuration option
+20/10/2019 12:35:42 PM	Gathering users
+20/10/2019 12:35:42 PM	Gathering roles
+20/10/2019 12:35:42 PM	Gathering application roles
+20/10/2019 12:35:42 PM	Gathering role memberships
+20/10/2019 12:35:42 PM	Gathering filegroups
+20/10/2019 12:35:42 PM	Gathering files
+20/10/2019 12:35:42 PM	Gathering full-text catalogs
+20/10/2019 12:35:42 PM	Gathering assemblies
+20/10/2019 12:35:42 PM	Gathering certificates
+20/10/2019 12:35:42 PM	Gathering asymmetric keys
+20/10/2019 12:35:42 PM	Gathering symmetric keys
+20/10/2019 12:35:42 PM	Gathering encrypted symmetric keys
+20/10/2019 12:35:42 PM	Gathering database encryption keys
+20/10/2019 12:35:42 PM	Gathering schemas
+20/10/2019 12:35:42 PM	Gathering XML schema collections
+20/10/2019 12:35:42 PM	Gathering user-defined data types
+20/10/2019 12:35:42 PM	Gathering user-defined types
+20/10/2019 12:35:42 PM	Gathering table types
+20/10/2019 12:35:42 PM	Gathering unique keys for table types
+20/10/2019 12:35:42 PM	Gathering primary keys for table types
+20/10/2019 12:35:42 PM	Gathering indexes for table types
+20/10/2019 12:35:42 PM	Gathering check constraints for table types
+20/10/2019 12:35:42 PM	Gathering default constraints for table types
+20/10/2019 12:35:42 PM	Gathering partition functions
+20/10/2019 12:35:42 PM	Gathering partition schemes
+20/10/2019 12:35:42 PM	Gathering functions
+20/10/2019 12:35:42 PM	Gathering encrypted functions
+20/10/2019 12:35:42 PM	Gathering aggregates
+20/10/2019 12:35:42 PM	Gathering procedures
+20/10/2019 12:35:42 PM	Gathering encrypted procedures
+20/10/2019 12:35:42 PM	Gathering tables
+20/10/2019 12:35:42 PM	Gathering primary keys
+20/10/2019 12:35:42 PM	Gathering unique constraints
+20/10/2019 12:35:43 PM	Gathering foreign keys
+20/10/2019 12:35:43 PM	Gathering default constraints
+20/10/2019 12:35:43 PM	Gathering check constraints
+20/10/2019 12:35:43 PM	Gathering views
+20/10/2019 12:35:43 PM	Gathering encrypted views
+20/10/2019 12:35:43 PM	Gathering indexes
+20/10/2019 12:35:43 PM	Gathering statistics
+20/10/2019 12:35:43 PM	Gathering full-text index stoplists
+20/10/2019 12:35:43 PM	Gathering search property lists
+20/10/2019 12:35:43 PM	Gathering search properties
+20/10/2019 12:35:43 PM	Gathering full-text indexes
+20/10/2019 12:35:43 PM	Gathering column store indexes
+20/10/2019 12:35:43 PM	Gathering spatial indexes
+20/10/2019 12:35:43 PM	Gathering XML indexes
+20/10/2019 12:35:43 PM	Gathering Selective XML indexes
+20/10/2019 12:35:43 PM	Gathering encrypted triggers
+20/10/2019 12:35:43 PM	Gathering triggers
+20/10/2019 12:35:43 PM	Gathering encrypted and clr ddl triggers
+20/10/2019 12:35:43 PM	Gathering ddl triggers
+20/10/2019 12:35:43 PM	Gathering synonyms
+20/10/2019 12:35:43 PM	Gathering defaults
+20/10/2019 12:35:43 PM	Gathering data constraint uddt bindings
+20/10/2019 12:35:43 PM	Gathering rules
+20/10/2019 12:35:43 PM	Gathering data constraint uddt bindings
+20/10/2019 12:35:43 PM	Gathering message types
+20/10/2019 12:35:43 PM	Gathering queues
+20/10/2019 12:35:43 PM	Gathering contracts
+20/10/2019 12:35:43 PM	Gathering services
+20/10/2019 12:35:43 PM	Gathering routes
+20/10/2019 12:35:43 PM	Gathering event notifications
+20/10/2019 12:35:43 PM	Gathering remote service bindings
+20/10/2019 12:35:43 PM	Gathering broker priorities
+20/10/2019 12:35:43 PM	Gathering database audit specifications
+20/10/2019 12:35:43 PM	Gathering signatures
+20/10/2019 12:35:43 PM	Gathering data compression options
+20/10/2019 12:35:43 PM	Gathering sequence types
+20/10/2019 12:35:43 PM	Gathering security policies
+20/10/2019 12:35:43 PM	Gather column encryption keys
+20/10/2019 12:35:43 PM	Gathering column master keys
+20/10/2019 12:35:43 PM	Gathering external data sources
+20/10/2019 12:35:43 PM	Gathering external file formats
+20/10/2019 12:35:43 PM	Gathering external tables
+20/10/2019 12:35:43 PM	Gathering extended properties
+20/10/2019 12:35:46 PM	Scanning project for duplicate elements
+20/10/2019 12:35:46 PM	Finished duplicate element processing
+20/10/2019 12:35:49 PM	Finished importing database.
+20/10/2019 12:35:49 PM	A summary of the import was saved to the following location: C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\Import Schema Logs\KAKEDB_20191020023524.log
+20/10/2019 12:35:49 PM	Click Finish to continue...
