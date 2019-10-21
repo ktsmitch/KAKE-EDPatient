@@ -17,6 +17,10 @@ h2 {
     margin: 0 auto;
 }
 
+ul{
+  text-decoration: none; 
+}
+
 .image{
   width: 80%;
   height: 300px;
@@ -29,8 +33,17 @@ h2 {
   
 }
 
+a{
+  text-decoration: none; 
+}
+
 input {
     width: 80%;
+}
+
+.content {
+  min-height: 1800px;
+  margin-bottom: 100px;
 }
 
 .container {
@@ -58,6 +71,9 @@ h3 {
     font-family: 'Catamaran', sans-serif;
 }
 
+a:hover {
+  text-decoration: none; 
+}
 
 button {
   background-color: #eee;
@@ -74,7 +90,6 @@ button {
   cursor: pointer;
   display: block;
   margin-bottom: 50px;
-  margin-top: 30px;
   }
 
   button:hover{
@@ -89,9 +104,6 @@ button {
     color: white;
   }
 
-  .content{
-    min-height: 800px;
-  }
 
   .alphabet {
     margin: auto;
@@ -115,7 +127,6 @@ button {
   }
 
 
-  
   .alphabet li {
     cursor: pointer;
     position: relative;
@@ -133,12 +144,15 @@ button {
     background-color: #BBD8DC !important;
     color: white;
     text-decoration: none;
+
   }
 
   .alphabet li.selected {
     background-color: #CFD8DC;
     color: white;
+    text-decoration: none; 
   }
+
   .alphabet li:hover {
     color: #607D8B;
     background-color: #DDD;

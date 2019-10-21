@@ -1,6 +1,6 @@
 <div id="search-component">
-
-  <input matInput #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Search for your condition" autocomplete="off" />
+  <h3>search for your condition</h3>
+  <input matInput #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="..." autocomplete="off" />
   
   <ul class="search-result">
     <li *ngFor="let clinic of clinical$ | async" >

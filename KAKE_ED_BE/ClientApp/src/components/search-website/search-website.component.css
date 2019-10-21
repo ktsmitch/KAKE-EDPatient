@@ -12,6 +12,10 @@ h1 {
     text-align: center; 
     }
     
+    a{
+        padding-bottom: 5px;
+    }
+
     .noData{
          text-align: center;
         margin: 0 auto;

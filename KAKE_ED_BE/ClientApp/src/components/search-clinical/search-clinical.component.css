@@ -11,7 +11,7 @@
   list-style-type: none;
   margin: auto;
   font-family: 'Catamaran', sans-serif; 
-  width: 50%;
+  width: 70%;
 }
 
 h1 {
@@ -33,35 +33,47 @@ h1 {
   color: white;
   display: block;
   text-decoration: none;
+  padding-bottom: 5px;
 }
 
 .search-result li a:hover {
   color: white;
+  padding-bottom: 5px;
 }
 .search-result li a:active {
   color: white;
+  padding-bottom: 5px;
 }
 #search-box {
-  width: 50%;
+  width: 70%;
   height: 50px;
   text-align: center;
   font-family: 'Catamaran', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   outline: none; 
   border-radius: 8px;
+  padding: 5px;
 }
 
 ::-webkit-input-placeholder {
   text-align: center;
   font-family: 'Catamaran', sans-serif;
-  font-size: 30px; 
+  font-size: 20px;
+ vertical-align: middle;
 }
 
+
+h3 {
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'Catamaran', sans-serif;
+}
 
 ul.search-result {
   margin-top: 0;
   padding-left: 0;
   text-align: center;
   font-family: 'Catamaran', sans-serif;
-  font-size: 26px;
+  font-size: 20px;
 }
