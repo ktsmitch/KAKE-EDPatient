@@ -5,27 +5,28 @@ using KAKE_ED_BE.Models;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using FluentAssertions;
+using System.Transactions;
+using System.Data.SqlClient;
 
 namespace EDKAKE.Tests
 {
     public class ClinicalControllerTests
     {
-
+  
         #region Get All Clinical
       
         [Fact]
         public void GetAllClinical_Return_OkResult()
         {
+         
             //arrange
             ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
-            IEnumerable<Clinical> data = new List<Clinical>();
 
             //act
-            data = testClinicalAccess.GetAllClinicalInfo();
+            IEnumerable<Clinical> data = testClinicalAccess.GetAllClinicalInfo();
 
             //assert
-            Assert.IsType<OkObjectResult>(data);
-
+            Assert.IsType<Clinical[]>(data);
         }
 
         [Fact]
@@ -52,15 +53,14 @@ namespace EDKAKE.Tests
         {
             //arrange
             ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
-            Clinical data = new Clinical();
             var postId = 1;
 
 
             //act
-            data = testClinicalAccess.GetClinicalData(postId);
+            Clinical data = testClinicalAccess.GetClinicalData(postId);
 
             //assert
-            Assert.IsType<OkObjectResult>(data);
+            Assert.IsType<Clinical>(data);
 
         }
 
@@ -69,15 +69,13 @@ namespace EDKAKE.Tests
         {
             //arrange
             ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
-            Clinical data = new Clinical();
-            var postId = 1000;
-
+            int postId = -1000;
 
             //act
-            data = testClinicalAccess.GetClinicalData(postId);
-
-            //assert
-            Assert.IsType<NotFoundResult>(data);
+            Clinical data = testClinicalAccess.GetClinicalData(postId);
+            if (data == null)
+                //assert
+            Assert.IsType<BadRequestResult>(data);
 
         }
 
@@ -94,7 +92,7 @@ namespace EDKAKE.Tests
             data = testClinicalAccess.GetClinicalData(postId);
 
             //assert
-            Assert.IsType<BadRequestResult>(data);
+            Assert.IsType<Clinical>(data);
 
         }
         #endregion
@@ -105,7 +103,7 @@ namespace EDKAKE.Tests
         {
             //arrange
             ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
-            Clinical data = new Clinical() { Id = 1234567, Name = "Test Name", WhatIs = "Test What Is" };
+            Clinical data = new Clinical() { Name = "Test Name", WhatIs = "Test What Is" };
             int expected = 1; //1 = successfully added to DB
 
             //act
@@ -117,37 +115,23 @@ namespace EDKAKE.Tests
         }
 
         [Fact]
-        public void AddValidData_Return_BadRquest()
+        public void AddInvalidData_Return_BadRquest()
         {
             //arrange
             ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
-            Clinical data = new Clinical() { Id = 1, Name = "Test Name", WhatIs = "Test What Is" }; //Test ID same as existing DB item
-            int expected = 1; //1 = successfully added to DB
+            Clinical data = new Clinical() { WhatIs = null }; 
+            int expected = 0; // 0 = not added successfully to DB
 
             //act
             int result = testClinicalAccess.AddClinical(data);
 
             //assert
-            Assert.NotEqual(expected, result);
+            Assert.Equal(expected, result);
+
 
         }
 
-        [Fact]
-        public void AddValidData_Return_BadRquest2()
-        {
-            //arrange
-            ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
-            Clinical data = new Clinical() { Id = 123456 }; //Test adding without required fields: Name and WhatIs
-            int expected = 1; //1 = successfully added to DB
-
-            //act
-            int result = testClinicalAccess.AddClinical(data);
-
-            //assert
-            Assert.NotEqual(expected, result);
-
-        }
-
+       
         #endregion
 
         #region Updating Existing Condition
@@ -170,24 +154,25 @@ namespace EDKAKE.Tests
         }
 
         [Fact]
-        public void UpdateInValidData_Return_NotFound()
+        public void UpdateInvalidData_Return_NotFound()
         {
             //arrange
             ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
             var postId = 1;
-            int expected = 1; //1 = successfully added to DB
+            int expected = 0; // 0 = not added successfully to DB
 
             //act
             Clinical existingPost = testClinicalAccess.GetClinicalData(postId);
             var invalidPost = new Clinical();
-            invalidPost.Id = 123456;
-            invalidPost.Name = existingPost.Name;
-            invalidPost.WhatIs = existingPost.WhatIs;
-        
+            invalidPost = existingPost; 
+            invalidPost.Name = null;
+            invalidPost.WhatIs = null;
+
+
             int returnVal = testClinicalAccess.UpdateClinical(invalidPost);
 
             //assert
-            Assert.NotEqual(expected, returnVal);
+            Assert.Equal(expected, returnVal);
         }
 
         #endregion
@@ -210,23 +195,6 @@ namespace EDKAKE.Tests
 
         }
 
-        [Fact]
-        public void Delete_Clinical_Return_BadRequestResult()
-        {
-            //arrange
-            ClinicalDataAccessLayer testClinicalAccess = new ClinicalDataAccessLayer();
-            var postId = 'x';
-            int expected = 1; //1 = successfully added to DB
-
-            //act
-            int returnVal = testClinicalAccess.DeleteClinical(postId);
-
-
-            //assert
-            Assert.NotEqual(expected, returnVal);
-
-        }
-
         #endregion
 
 
@@ -245,7 +213,7 @@ namespace EDKAKE.Tests
             data = testClinicalAccess.SearchClinicalData(searchString);
 
             //assert
-            Assert.IsType<OkObjectResult>(data);
+            Assert.IsType<Clinical[]>(data);
 
         }
 

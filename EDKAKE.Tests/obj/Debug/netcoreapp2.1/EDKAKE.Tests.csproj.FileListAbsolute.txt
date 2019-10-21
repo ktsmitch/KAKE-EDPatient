@@ -19,3 +19,4 @@ C:\Users\ktsmi\source\repos\KAKE_ED_BE\EDKAKE.Tests\obj\Debug\netcoreapp2.1\EDKA
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\EDKAKE.Tests\obj\Debug\netcoreapp2.1\EDKAKE.Tests.pdb
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\EDKAKE.Tests\bin\Debug\netcoreapp2.1\KAKEDB.dll
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\EDKAKE.Tests\bin\Debug\netcoreapp2.1\KAKEDB.pdb
+C:\Users\ktsmi\source\repos\KAKE_ED_BE\EDKAKE.Tests\bin\Debug\netcoreapp2.1\Moq.Tests.ComTypes.dll

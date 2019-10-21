@@ -67,6 +67,10 @@ namespace KAKE_ED_BE.Models
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
+                    if(clinical.Name == null || clinical.WhatIs == null )
+                    {
+                        return 0; 
+                    }
                     Random random = new Random();
                     int num = random.Next();
                     string sqlQuery = "INSERT into dbo.Clinicalnfo (Id,Name,WhatIs,WhatCauses,Symptons,Treatment,HomeCare,WhatToExpect,SeekingHelp,WantToKnowMore,WaysToReduce,FollowUp,Prevention,WhyDoesThisHappen,ReturnImmedIf,Instructions,WhyIsItAProb,WhatShouldIDo,HowIsItSpread,StoppingSpread, ProbsToWatchFor) VALUES ('" + num + "' , '" 
@@ -91,6 +95,10 @@ namespace KAKE_ED_BE.Models
             {
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
+                    if (clinical.Name == null || clinical.WhatIs == null)
+                    {
+                        return 0;
+                    }
                     //add all columns
                     string sqlQuery = "Update dbo.Clinicalnfo Set Name= '" + clinical.Name + "' , WhatIs= '" + clinical.WhatIs + "' , WhatCauses='" + clinical.WhatCauses + "' , Symptons= '" + clinical.Symptons + "' , Treatment = '" + clinical.Treatment + "' , HomeCare = '" + clinical.HomeCare + "' , WhatToExpect = '" + clinical.WhatToExpect + "' , SeekingHelp = '" + clinical.SeekingHelp + "' , WantToKnowMore = '" + clinical.WantToKnowMore + "' , WaysToReduce = '" + clinical.WaysToReduce + "' , FollowUp = '" + clinical.FollowUp + "' , Prevention = '" + clinical.Prevention + "' , WhyDoesThisHappen = '" + clinical.WhyDoesThisHappen + "' , ReturnImmedIf = '" + clinical.ReturnImmedIf + "' , Instructions = '" + clinical.Instructions + "' , WhyIsItAProb = '" + clinical.WhyIsItAProb
 + "' , WhatShouldIDo = '" + clinical.WhatShouldIDo + "' , HowIsItSpread = '" + clinical.HowIsItSpread + "' , StoppingSpread = '" + clinical.StoppingSpread + "' , ProbsToWatchFor = '" + clinical.ProbsToWatchFor + "' where Id=" + clinical.Id;
@@ -167,7 +175,7 @@ namespace KAKE_ED_BE.Models
 
                     }
                 }
-
+               
                 return clinical;
             }
             catch

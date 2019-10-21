@@ -2,9 +2,5 @@ C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\bin\Debug\KAKEDB.dacpac
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\bin\Debug\KAKEDB.dll
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\bin\Debug\KAKEDB.pdb
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\obj\Debug\KAKEDB.sqlprojAssemblyReference.cache
-C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\obj\Debug\Model.xml
-C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\obj\Debug\refactor.xml
-C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\obj\Debug\postdeploy.sql
-C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\obj\Debug\predeploy.sql
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\obj\Debug\KAKEDB.dll
 C:\Users\ktsmi\source\repos\KAKE_ED_BE\KAKEDB\obj\Debug\KAKEDB.pdb
