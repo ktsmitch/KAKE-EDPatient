@@ -6,7 +6,7 @@ Survey.StylesManager.applyTheme("bootstrap");
 
 @Component({
   selector: 'app-survey',
-  template: `<div id='surveyElement' style="margin:0 auto;text-align:center;font-family: 'Catamaran', sans-serif; margin-bottom: 100px;  font-size: 24px; "></div>`,
+  template: `<div id='surveyElement' style="   font-size: 24px; margin:0 auto;text-align:center;font-family: 'Catamaran', sans-serif; margin-bottom: 100px; "></div>`,
   styleUrls: ['./survey.component.css']
 })
 export class SurveyComponent implements OnInit {
